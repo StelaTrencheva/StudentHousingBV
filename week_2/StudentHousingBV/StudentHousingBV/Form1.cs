@@ -12,11 +12,12 @@ namespace StudentHousingBV
 {
     public partial class LogInPage : Form
     {
-        Student StudentUser;
+        Student StudentUser=new Student();
         Employee EmployeeUser;
-        List<Student> ListOfAllStudents = new List<Student>();
-        List<Employee> ListOfAllEmployees = new List<Employee>();
-
+        List<Employee> ListOfAllEmployees;
+        int SelectedStudentIndex;
+        int SelectedEmployeeIndex = 0;
+        List<Student> ListOfAllStudents;
         public LogInPage()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace StudentHousingBV
 
         private void rBEmployee_CheckedChanged(object sender, EventArgs e)
         {
-            ListOfAllEmployees.Clear();
+            ListOfAllEmployees = new List<Employee>();
             cbbProfiles.Items.Clear();
             for (int i = 0; i < 5; i++)
             {
@@ -36,26 +37,35 @@ namespace StudentHousingBV
 
         private void rBStudents_CheckedChanged(object sender, EventArgs e)
         {
-            ListOfAllStudents.Clear();
+            ListOfAllStudents = new List<Student>();
             cbbProfiles.Items.Clear();
             for (int i = 0; i < 10; i++)
             {
-                StudentUser = new Student(i);
+                StudentUser.SetStudent(i);
                 cbbProfiles.Items.Add(StudentUser.GetStudentInfo());
                 ListOfAllStudents.Add(StudentUser);
             }
+
+            
         }
         
         private void BtnLogIn_Click(object sender, EventArgs e)
         {
             if (rBStudents.Checked)
             {
-                int SelectedStudentIndex = cbbProfiles.SelectedIndex;
+                SelectedStudentIndex = cbbProfiles.SelectedIndex;
+                Student_App student_app = new Student_App();
+                StudentUser.GetIndex(SelectedStudentIndex);
+                string f = ListOfAllStudents[SelectedStudentIndex].GetName();
+                student_app.GetStudentIndex(SelectedStudentIndex, f);
+                student_app.Show();
+                this.Hide();
             }
             else if (rBEmployee.Checked)
             {
-                int SelectedEmployeeIndex = cbbProfiles.SelectedIndex;
+                SelectedEmployeeIndex = cbbProfiles.SelectedIndex;
             }
         }
+      
     }
 }
