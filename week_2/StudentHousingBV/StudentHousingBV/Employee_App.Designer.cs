@@ -45,6 +45,7 @@
             this.button4 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.button9 = new System.Windows.Forms.Button();
+            this.lblDownloadResult = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contractPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
@@ -74,6 +75,7 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.AliceBlue;
+            this.panel2.Controls.Add(this.lblDownloadResult);
             this.panel2.Controls.Add(this.btnDownloadContract);
             this.panel2.Controls.Add(this.contractPicture);
             this.panel2.Controls.Add(this.lblEmployeeNumber);
@@ -91,18 +93,19 @@
             this.btnDownloadContract.BackColor = System.Drawing.Color.Lavender;
             this.btnDownloadContract.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnDownloadContract.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.btnDownloadContract.Location = new System.Drawing.Point(470, 571);
+            this.btnDownloadContract.Location = new System.Drawing.Point(480, 543);
             this.btnDownloadContract.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDownloadContract.Name = "btnDownloadContract";
             this.btnDownloadContract.Size = new System.Drawing.Size(205, 45);
             this.btnDownloadContract.TabIndex = 19;
             this.btnDownloadContract.Text = "Download Contract";
             this.btnDownloadContract.UseVisualStyleBackColor = false;
+            this.btnDownloadContract.Click += new System.EventHandler(this.btnDownloadContract_Click);
             // 
             // contractPicture
             // 
             this.contractPicture.Image = global::StudentHousingBV.Properties.Resources.ContractLaw;
-            this.contractPicture.Location = new System.Drawing.Point(394, 325);
+            this.contractPicture.Location = new System.Drawing.Point(394, 296);
             this.contractPicture.Name = "contractPicture";
             this.contractPicture.Size = new System.Drawing.Size(364, 233);
             this.contractPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -252,6 +255,15 @@
             this.button9.Text = "Common Questions";
             this.button9.UseVisualStyleBackColor = false;
             // 
+            // lblDownloadResult
+            // 
+            this.lblDownloadResult.AutoSize = true;
+            this.lblDownloadResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblDownloadResult.Location = new System.Drawing.Point(351, 596);
+            this.lblDownloadResult.Name = "lblDownloadResult";
+            this.lblDownloadResult.Size = new System.Drawing.Size(0, 20);
+            this.lblDownloadResult.TabIndex = 20;
+            // 
             // Employee_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -289,5 +301,6 @@
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.PictureBox contractPicture;
         private System.Windows.Forms.Button btnDownloadContract;
+        private System.Windows.Forms.Label lblDownloadResult;
     }
 }

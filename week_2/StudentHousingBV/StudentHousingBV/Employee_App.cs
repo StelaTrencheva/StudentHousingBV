@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Net;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -33,6 +34,22 @@ namespace StudentHousingBV
             {
                 profilePicture.Image = Properties.Resources.woman_avatar;
             }
+        }
+
+        private FolderBrowserDialog d;
+        private void btnDownloadContract_Click(object sender, EventArgs e)
+        {
+            d = new System.Windows.Forms.FolderBrowserDialog();
+            DialogResult result=d.ShowDialog();
+            string folderName;
+            if (result == DialogResult.OK)
+            {
+                folderName = d.SelectedPath;
+                WebClient Client = new WebClient();
+                Client.DownloadFile("https://inewicdn.azureedge.net/files/Employment_Agreement.pdf", $@"{folderName}\contract.pdf");
+                lblDownloadResult.Text = "Download completed! Check your Downloads folder!";
+            }
+            
         }
     }
 }
