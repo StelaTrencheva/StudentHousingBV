@@ -88,16 +88,19 @@ namespace StudentHousingBV
 
         private void BtnLogIn_Click(object sender, EventArgs e)
         {
+            SelectedIndex = cbbProfiles.SelectedIndex;
             if (rBStudents.Checked)
             {
-                SelectedIndex = cbbProfiles.SelectedIndex;
+                
                 Student_App student_app = new Student_App(ListOfAllStudents[SelectedIndex]);
                 student_app.Show();
                 this.Hide();
             }
             else if (rBEmployee.Checked)
             {
-                SelectedIndex = cbbProfiles.SelectedIndex;
+                Employee_App employee_app = new Employee_App(ListOfAllEmployees[SelectedIndex]);
+                employee_app.Show();
+                this.Hide();
             }
         }
         

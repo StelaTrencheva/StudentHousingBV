@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace StudentHousingBV
 {
-    class Employee
+    public class Employee
     {
         private string EmployeeFirstName;
         private string EmployeeLastName;
@@ -32,6 +32,21 @@ namespace StudentHousingBV
         {
             return $"{this.EmployeeFirstName} {this.EmployeeLastName} - Employee number: {this.EmployeeNumber}";
         }
-
+        public string GetName()
+        {
+            return $"{EmployeeFirstName} {EmployeeLastName}";
+        }
+        public int GetAge()
+        {
+            return EmployeeAge;
+        }
+        public string GetSex()
+        {
+            return EmployeeSex;
+        }
+        public int GetEmployeeNumber()
+        {
+            return EmployeeNumber;
+        }
     }
 }
