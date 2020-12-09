@@ -1,0 +1,10 @@
+C:\Fontys\SEM01-Advanced_phase\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe.config
+C:\Fontys\SEM01-Advanced_phase\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe
+C:\Fontys\SEM01-Advanced_phase\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.pdb
+C:\Fontys\SEM01-Advanced_phase\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csprojAssemblyReference.cache
+C:\Fontys\SEM01-Advanced_phase\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.LogInPage.resources
+C:\Fontys\SEM01-Advanced_phase\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Properties.Resources.resources
+C:\Fontys\SEM01-Advanced_phase\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.GenerateResource.cache
+C:\Fontys\SEM01-Advanced_phase\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.CoreCompileInputs.cache
+C:\Fontys\SEM01-Advanced_phase\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.exe
+C:\Fontys\SEM01-Advanced_phase\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.pdb
