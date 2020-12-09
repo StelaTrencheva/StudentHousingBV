@@ -13,22 +13,20 @@ namespace StudentHousingBV
         private int EmployeeAge;
         private string EmployeeSex;
         private int EmployeeNumber;
-        
-        string[] EmployeeFirstNames = new string[5] { "Cameron", "Ezra", "River", "Milan", "Bailey" };
-        string[] EmployeeLastNames = new string[5] { "Sanhez", "Morris", "Moore", "Adams", "Anderson" };
-        int[] employeeAge = new int[5] { 24, 28, 32, 36, 26 };
-        string[] UserSex = new string[2] { "female", "male" };
-        int[] employeeNumber = new int[5] { 1, 2, 3, 4, 5 };
-
-        Random RandomNumber = new Random();
-
-        public Employee(int index)
+       
+        public Employee(
+            string FirstName,
+            string LastName,
+            int Age,
+            string Sex,
+            int Number
+            )
         {
-            this.EmployeeFirstName = EmployeeFirstNames[index];
-            this.EmployeeLastName = EmployeeLastNames[index];
-            this.EmployeeAge = employeeAge[RandomNumber.Next(0, 4)];
-            this.EmployeeSex = UserSex[RandomNumber.Next(0, 1)];
-            this.EmployeeNumber = employeeNumber[index];
+            this.EmployeeFirstName = FirstName;
+            this.EmployeeLastName = LastName;
+            this.EmployeeAge = Age;
+            this.EmployeeSex = Sex;
+            this.EmployeeNumber = Number;
         }
         public string GetEmployeeInfo()
         {
