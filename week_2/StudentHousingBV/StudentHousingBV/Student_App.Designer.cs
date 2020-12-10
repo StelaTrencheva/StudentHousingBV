@@ -47,8 +47,8 @@
             this.lblBuilding = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.profilePicture = new System.Windows.Forms.PictureBox();
-            this.pnlHouseRules = new StudentHousingBV.HouseRules();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlHouseRules = new StudentHousingBV.HouseRules();
             this.pnlMyAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             this.panel1.SuspendLayout();
@@ -65,6 +65,7 @@
             this.btnCommonQuestions.TabIndex = 17;
             this.btnCommonQuestions.Text = "Common Questions";
             this.btnCommonQuestions.UseVisualStyleBackColor = false;
+            this.btnCommonQuestions.Click += new System.EventHandler(this.btnCommonQuestions_Click);
             // 
             // btnHouseRules
             // 
@@ -104,6 +105,7 @@
             this.btnAnnouncements.TabIndex = 10;
             this.btnAnnouncements.Text = "Announcements";
             this.btnAnnouncements.UseVisualStyleBackColor = false;
+            this.btnAnnouncements.Click += new System.EventHandler(this.btnAnnouncements_Click);
             // 
             // btnMyTasks
             // 
@@ -116,6 +118,7 @@
             this.btnMyTasks.TabIndex = 15;
             this.btnMyTasks.Text = "My tasks";
             this.btnMyTasks.UseVisualStyleBackColor = false;
+            this.btnMyTasks.Click += new System.EventHandler(this.btnMyTasks_Click);
             // 
             // btnComplaints
             // 
@@ -128,6 +131,7 @@
             this.btnComplaints.TabIndex = 11;
             this.btnComplaints.Text = "Complaints";
             this.btnComplaints.UseVisualStyleBackColor = false;
+            this.btnComplaints.Click += new System.EventHandler(this.btnComplaints_Click);
             // 
             // btnWallet
             // 
@@ -140,6 +144,7 @@
             this.btnWallet.TabIndex = 14;
             this.btnWallet.Text = "Wallet";
             this.btnWallet.UseVisualStyleBackColor = false;
+            this.btnWallet.Click += new System.EventHandler(this.btnWallet_Click);
             // 
             // btnContactPage
             // 
@@ -152,6 +157,7 @@
             this.btnContactPage.TabIndex = 12;
             this.btnContactPage.Text = "Contact Page";
             this.btnContactPage.UseVisualStyleBackColor = false;
+            this.btnContactPage.Click += new System.EventHandler(this.btnContactPage_Click);
             // 
             // lblUniversity
             // 
@@ -278,13 +284,6 @@
             this.profilePicture.TabIndex = 0;
             this.profilePicture.TabStop = false;
             // 
-            // pnlHouseRules
-            // 
-            this.pnlHouseRules.Location = new System.Drawing.Point(0, 0);
-            this.pnlHouseRules.Name = "pnlHouseRules";
-            this.pnlHouseRules.Size = new System.Drawing.Size(824, 650);
-            this.pnlHouseRules.TabIndex = 20;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Thistle;
@@ -301,6 +300,13 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(263, 650);
             this.panel1.TabIndex = 2;
+            // 
+            // pnlHouseRules
+            // 
+            this.pnlHouseRules.Location = new System.Drawing.Point(0, 0);
+            this.pnlHouseRules.Name = "pnlHouseRules";
+            this.pnlHouseRules.Size = new System.Drawing.Size(824, 650);
+            this.pnlHouseRules.TabIndex = 20;
             // 
             // Student_App
             // 
