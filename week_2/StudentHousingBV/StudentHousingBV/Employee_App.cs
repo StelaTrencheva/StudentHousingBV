@@ -35,8 +35,7 @@ namespace StudentHousingBV
             {
                 profilePicture.Image = Properties.Resources.woman_avatar;
             }
-            pnlHouseRulesEmployee.Visible = false;
-            pnlComplaintsEmployee1.Visible = false;
+            HideUserControls();
         }
 
         private FolderBrowserDialog d;
@@ -57,101 +56,64 @@ namespace StudentHousingBV
 
         private void btnHouseRulesEmp_Click(object sender, EventArgs e)
         {
-            btnHouseRulesEmp.BackColor = Color.LightSteelBlue;
-            btnMyAccountEmp.BackColor = Color.AliceBlue;
-            btnAnnouncementsEmp.BackColor = Color.AliceBlue;
-            btnCommonQuestionsEmp.BackColor = Color.AliceBlue;
-            btnComplaintsEmp.BackColor = Color.AliceBlue;
-            btnContactPageEmp.BackColor = Color.AliceBlue;
-            btnWalletEmp.BackColor = Color.AliceBlue;
-
             pnlHouseRulesEmployee.Visible = true;
             pnlHouseRulesEmployee.BringToFront();
-            pnlEmployeeAccount.SendToBack();
-            pnlComplaintsEmployee1.SendToBack();
-
+            ChangeAllColors();
+            btnHouseRulesEmp.BackColor = Color.LightSteelBlue;
         }
-
-        private void btnMyAccountEmp_Click(object sender, EventArgs e)
+        private void ChangeAllColors()
         {
-             btnMyAccountEmp.BackColor = Color.LightSteelBlue;
             btnHouseRulesEmp.BackColor = Color.AliceBlue;
             btnAnnouncementsEmp.BackColor = Color.AliceBlue;
-            btnCommonQuestionsEmp.BackColor = Color.AliceBlue;
             btnComplaintsEmp.BackColor = Color.AliceBlue;
             btnContactPageEmp.BackColor = Color.AliceBlue;
-            btnWalletEmp.BackColor = Color.AliceBlue;
-
-            pnlEmployeeAccount.BringToFront();
-            pnlHouseRulesEmployee.Visible = false;
-            pnlComplaintsEmployee1.Visible = false;
+            btnMyAccountEmp.BackColor = Color.AliceBlue;
+            btnManageAccountsEmp.BackColor = Color.AliceBlue;
         }
-
-        private void profilePicture_Click(object sender, EventArgs e)
+        // every time a new panel is added, add it here and make its visability false
+        private void HideUserControls()
         {
-
+            pnlHouseRulesEmployee.Visible = false;
+            pnlComplaintsEmployee.Visible = false;
+        }
+        private void btnMyAccountEmp_Click(object sender, EventArgs e)
+        {
+            HideUserControls();
+            ChangeAllColors();
+            btnMyAccountEmp.BackColor = Color.LightSteelBlue;
         }
 
         
-
         private void btnAnnouncementsEmp_Click(object sender, EventArgs e)
         {
-             btnAnnouncementsEmp.BackColor = Color.LightSteelBlue;
-            btnHouseRulesEmp.BackColor = Color.AliceBlue;
-            btnMyAccountEmp.BackColor = Color.AliceBlue;
-            btnCommonQuestionsEmp.BackColor = Color.AliceBlue;
-            btnComplaintsEmp.BackColor = Color.AliceBlue;
-            btnContactPageEmp.BackColor = Color.AliceBlue;
-            btnWalletEmp.BackColor = Color.AliceBlue;
+            ChangeAllColors();
+            btnAnnouncementsEmp.BackColor = Color.LightSteelBlue;
         }
 
         private void btnComplaintsEmp_Click(object sender, EventArgs e)
         {
-             btnComplaintsEmp.BackColor = Color.LightSteelBlue;
-            btnHouseRulesEmp.BackColor = Color.AliceBlue;
-            btnMyAccountEmp.BackColor = Color.AliceBlue;
-            btnCommonQuestionsEmp.BackColor = Color.AliceBlue;
-            btnAnnouncementsEmp.BackColor = Color.AliceBlue;
-            btnContactPageEmp.BackColor = Color.AliceBlue;
-            btnWalletEmp.BackColor = Color.AliceBlue;
-
-            pnlComplaintsEmployee1.Visible = true;
-            pnlComplaintsEmployee1.BringToFront();
-            pnlEmployeeAccount.SendToBack();
-            pnlHouseRulesEmployee.SendToBack();
+            pnlComplaintsEmployee.Visible = true;
+            pnlComplaintsEmployee.BringToFront();
+            ChangeAllColors();
+            btnComplaintsEmp.BackColor = Color.LightSteelBlue;
         }
 
         private void btnContactPageEmp_Click(object sender, EventArgs e)
         {
-             btnContactPageEmp.BackColor = Color.LightSteelBlue;
-            btnHouseRulesEmp.BackColor = Color.AliceBlue;
-            btnMyAccountEmp.BackColor = Color.AliceBlue;
-            btnCommonQuestionsEmp.BackColor = Color.AliceBlue;
-            btnAnnouncementsEmp.BackColor = Color.AliceBlue;
-            btnComplaintsEmp.BackColor = Color.AliceBlue;
-            btnWalletEmp.BackColor = Color.AliceBlue;
+            ChangeAllColors();
+            btnContactPageEmp.BackColor = Color.LightSteelBlue;
         }
 
         private void btnCommonQuestionsEmp_Click(object sender, EventArgs e)
         {
-             btnCommonQuestionsEmp.BackColor = Color.LightSteelBlue;
-            btnHouseRulesEmp.BackColor = Color.AliceBlue;
-            btnMyAccountEmp.BackColor = Color.AliceBlue;
-            btnContactPageEmp.BackColor = Color.AliceBlue;
-            btnAnnouncementsEmp.BackColor = Color.AliceBlue;
-            btnComplaintsEmp.BackColor = Color.AliceBlue;
-            btnWalletEmp.BackColor = Color.AliceBlue;
+            ChangeAllColors();
+            btnCommonQuestionsEmp.BackColor = Color.LightSteelBlue;
         }
 
         private void btnWalletEmp_Click(object sender, EventArgs e)
         {
-             btnWalletEmp.BackColor = Color.LightSteelBlue;
-            btnHouseRulesEmp.BackColor = Color.AliceBlue;
-            btnMyAccountEmp.BackColor = Color.AliceBlue;
-            btnContactPageEmp.BackColor = Color.AliceBlue;
-            btnAnnouncementsEmp.BackColor = Color.AliceBlue;
-            btnComplaintsEmp.BackColor = Color.AliceBlue;
-            btnCommonQuestionsEmp.BackColor = Color.AliceBlue;
+            ChangeAllColors();
+            btnManageAccountsEmp.BackColor = Color.LightSteelBlue;
         }
         private void btnLogOutEmp_Click(object sender, EventArgs e)
         {

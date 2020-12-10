@@ -12,13 +12,20 @@ namespace StudentHousingBV
 {
     public partial class ComplaintsStudent : UserControl
     {
+        public Student student;
         public ComplaintsStudent()
         {
             InitializeComponent();
         }
 
+        public void SetStudent(Student student)
+        {
+            this.student = student;
+        }
+
         private void btnUploadComplaint_Click(object sender, EventArgs e)
         {
+            
             string newComplaint = txtBFillComplaint.Text.ToString();
             if(chBAnonymous.Checked)
             {
@@ -27,8 +34,8 @@ namespace StudentHousingBV
             }
             else if(!chBAnonymous.Checked)
             {
-                lbFillComplaints.Items.Add($"--> {newComplaint} - studentName");
-                lbViewComplaints.Items.Add($"--> {newComplaint} - studentName");
+                lbFillComplaints.Items.Add($"--> {newComplaint} - {student.GetName()}");
+                lbViewComplaints.Items.Add($"--> {newComplaint} - {student.GetName()}");
             }
         }
     }
