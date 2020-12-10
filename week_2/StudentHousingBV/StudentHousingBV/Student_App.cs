@@ -41,6 +41,8 @@ namespace StudentHousingBV
             }
             HideUserControls();
             complaintsStudent.SetStudent(student);
+            timerTaskReminder.Enabled = true;
+            timerTaskReminder.Start();
         }
 
        
@@ -129,6 +131,11 @@ namespace StudentHousingBV
             complaintsStudent.BringToFront();
             ChangeAllColors();
             btnComplaints.BackColor = Color.LightSteelBlue;
+        }
+
+        private void timerTaskReminder_Tick(object sender, EventArgs e)
+        {
+            MessageBox.Show($"You still havent done your chores!");
         }
     }
 }

@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.btnCommonQuestions = new System.Windows.Forms.Button();
             this.btnHouseRules = new System.Windows.Forms.Button();
             this.btnLogOut = new System.Windows.Forms.Button();
@@ -44,12 +45,13 @@
             this.btnChangeRoom = new System.Windows.Forms.Button();
             this.lblRoomNumber = new System.Windows.Forms.Label();
             this.pnlMyAccount = new System.Windows.Forms.Panel();
+            this.complaintsStudent = new StudentHousingBV.ComplaintsStudent();
             this.lblBuilding = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.profilePicture = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pnlHouseRules = new StudentHousingBV.HouseRules();
-            this.complaintsStudent = new StudentHousingBV.ComplaintsStudent();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.timerTaskReminder = new System.Windows.Forms.Timer(this.components);
             this.pnlMyAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             this.panel1.SuspendLayout();
@@ -256,6 +258,13 @@
             this.pnlMyAccount.Size = new System.Drawing.Size(828, 650);
             this.pnlMyAccount.TabIndex = 3;
             // 
+            // complaintsStudent
+            // 
+            this.complaintsStudent.Location = new System.Drawing.Point(0, 0);
+            this.complaintsStudent.Name = "complaintsStudent";
+            this.complaintsStudent.Size = new System.Drawing.Size(824, 650);
+            this.complaintsStudent.TabIndex = 21;
+            // 
             // lblBuilding
             // 
             this.lblBuilding.AutoSize = true;
@@ -286,6 +295,13 @@
             this.profilePicture.TabIndex = 0;
             this.profilePicture.TabStop = false;
             // 
+            // pnlHouseRules
+            // 
+            this.pnlHouseRules.Location = new System.Drawing.Point(1, 0);
+            this.pnlHouseRules.Name = "pnlHouseRules";
+            this.pnlHouseRules.Size = new System.Drawing.Size(824, 650);
+            this.pnlHouseRules.TabIndex = 20;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Thistle;
@@ -303,19 +319,10 @@
             this.panel1.Size = new System.Drawing.Size(263, 650);
             this.panel1.TabIndex = 2;
             // 
-            // pnlHouseRules
+            // timerTaskReminder
             // 
-            this.pnlHouseRules.Location = new System.Drawing.Point(1, 0);
-            this.pnlHouseRules.Name = "pnlHouseRules";
-            this.pnlHouseRules.Size = new System.Drawing.Size(824, 650);
-            this.pnlHouseRules.TabIndex = 20;
-            // 
-            // complaintsStudent
-            // 
-            this.complaintsStudent.Location = new System.Drawing.Point(0, 0);
-            this.complaintsStudent.Name = "complaintsStudent";
-            this.complaintsStudent.Size = new System.Drawing.Size(824, 650);
-            this.complaintsStudent.TabIndex = 21;
+            this.timerTaskReminder.Interval = 30000;
+            this.timerTaskReminder.Tick += new System.EventHandler(this.timerTaskReminder_Tick);
             // 
             // Student_App
             // 
@@ -360,5 +367,6 @@
         private System.Windows.Forms.Panel panel1;
         private HouseRules pnlHouseRules;
         private ComplaintsStudent complaintsStudent;
+        private System.Windows.Forms.Timer timerTaskReminder;
     }
 }
