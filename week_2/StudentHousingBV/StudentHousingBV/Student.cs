@@ -46,8 +46,32 @@ namespace StudentHousingBV
         
         public string GetName()
         {
-            return $"{FirstName}"; 
+            return $"{FirstName} {LastName}";
         }
-        
+        public int GetAge()
+        {
+            return Age;
+        }
+        public string GetSex()
+        {
+            return Sex;
+        }
+        public int GetStudentNumber()
+        {
+            return StudentNumber;
+        }
+        public int GetRoomNumber()
+        {
+            return RoomNumber;
+        }
+        public int GetBankAccount()
+        {
+            return BankAccount;
+        }
+        public int GetInitialBalance()
+        {
+            return InitialBalance;
+        }
+
     }
 }

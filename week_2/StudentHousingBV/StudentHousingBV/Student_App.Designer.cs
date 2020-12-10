@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.button9 = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
@@ -37,30 +36,22 @@
             this.button3 = new System.Windows.Forms.Button();
             this.button6 = new System.Windows.Forms.Button();
             this.button4 = new System.Windows.Forms.Button();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
+            this.lblUniversity = new System.Windows.Forms.Label();
+            this.lblStudentNumber = new System.Windows.Forms.Label();
+            this.lblSex = new System.Windows.Forms.Label();
+            this.lblAge = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
-            this.button10 = new System.Windows.Forms.Button();
-            this.label8 = new System.Windows.Forms.Label();
+            this.btnChangeRoom = new System.Windows.Forms.Button();
+            this.lblRoomNumber = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.lblBuilding = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            this.profilePicture = new System.Windows.Forms.PictureBox();
             this.panel2.SuspendLayout();
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             this.SuspendLayout();
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Location = new System.Drawing.Point(51, 56);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(258, 323);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 0;
-            this.pictureBox1.TabStop = false;
             // 
             // button9
             // 
@@ -159,45 +150,45 @@
             this.button4.Text = "Contact Page";
             this.button4.UseVisualStyleBackColor = false;
             // 
-            // label6
+            // lblUniversity
             // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label6.Location = new System.Drawing.Point(344, 250);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(123, 29);
-            this.label6.TabIndex = 5;
-            this.label6.Text = "University:";
+            this.lblUniversity.AutoSize = true;
+            this.lblUniversity.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblUniversity.Location = new System.Drawing.Point(344, 250);
+            this.lblUniversity.Name = "lblUniversity";
+            this.lblUniversity.Size = new System.Drawing.Size(129, 29);
+            this.lblUniversity.TabIndex = 5;
+            this.lblUniversity.Text = "University: ";
             // 
-            // label5
+            // lblStudentNumber
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label5.Location = new System.Drawing.Point(344, 206);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(189, 29);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Student number:";
+            this.lblStudentNumber.AutoSize = true;
+            this.lblStudentNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblStudentNumber.Location = new System.Drawing.Point(344, 206);
+            this.lblStudentNumber.Name = "lblStudentNumber";
+            this.lblStudentNumber.Size = new System.Drawing.Size(195, 29);
+            this.lblStudentNumber.TabIndex = 4;
+            this.lblStudentNumber.Text = "Student number: ";
             // 
-            // label4
+            // lblSex
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label4.Location = new System.Drawing.Point(344, 162);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(66, 29);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "Sex: ";
+            this.lblSex.AutoSize = true;
+            this.lblSex.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblSex.Location = new System.Drawing.Point(344, 162);
+            this.lblSex.Name = "lblSex";
+            this.lblSex.Size = new System.Drawing.Size(66, 29);
+            this.lblSex.TabIndex = 3;
+            this.lblSex.Text = "Sex: ";
             // 
-            // label3
+            // lblAge
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label3.Location = new System.Drawing.Point(344, 115);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(62, 29);
-            this.label3.TabIndex = 2;
-            this.label3.Text = "Age:";
+            this.lblAge.AutoSize = true;
+            this.lblAge.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblAge.Location = new System.Drawing.Point(344, 115);
+            this.lblAge.Name = "lblAge";
+            this.lblAge.Size = new System.Drawing.Size(68, 29);
+            this.lblAge.TabIndex = 2;
+            this.lblAge.Text = "Age: ";
             // 
             // button5
             // 
@@ -211,55 +202,55 @@
             this.button5.Text = "My Account";
             this.button5.UseVisualStyleBackColor = false;
             // 
-            // button10
+            // btnChangeRoom
             // 
-            this.button10.BackColor = System.Drawing.Color.Lavender;
-            this.button10.Font = new System.Drawing.Font("Roboto", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button10.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button10.Location = new System.Drawing.Point(677, 334);
-            this.button10.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button10.Name = "button10";
-            this.button10.Size = new System.Drawing.Size(91, 45);
-            this.button10.TabIndex = 18;
-            this.button10.Text = "Change";
-            this.button10.UseVisualStyleBackColor = false;
+            this.btnChangeRoom.BackColor = System.Drawing.Color.Lavender;
+            this.btnChangeRoom.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnChangeRoom.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnChangeRoom.Location = new System.Drawing.Point(349, 402);
+            this.btnChangeRoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnChangeRoom.Name = "btnChangeRoom";
+            this.btnChangeRoom.Size = new System.Drawing.Size(181, 45);
+            this.btnChangeRoom.TabIndex = 18;
+            this.btnChangeRoom.Text = "Change room";
+            this.btnChangeRoom.UseVisualStyleBackColor = false;
             // 
-            // label8
+            // lblRoomNumber
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label8.Location = new System.Drawing.Point(344, 339);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(172, 29);
-            this.label8.TabIndex = 7;
-            this.label8.Text = "Room number:";
+            this.lblRoomNumber.AutoSize = true;
+            this.lblRoomNumber.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblRoomNumber.Location = new System.Drawing.Point(344, 339);
+            this.lblRoomNumber.Name = "lblRoomNumber";
+            this.lblRoomNumber.Size = new System.Drawing.Size(178, 29);
+            this.lblRoomNumber.TabIndex = 7;
+            this.lblRoomNumber.Text = "Room number: ";
             // 
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.AliceBlue;
-            this.panel2.Controls.Add(this.button10);
-            this.panel2.Controls.Add(this.label8);
-            this.panel2.Controls.Add(this.label7);
-            this.panel2.Controls.Add(this.label6);
-            this.panel2.Controls.Add(this.label5);
-            this.panel2.Controls.Add(this.label4);
-            this.panel2.Controls.Add(this.label3);
+            this.panel2.Controls.Add(this.btnChangeRoom);
+            this.panel2.Controls.Add(this.lblRoomNumber);
+            this.panel2.Controls.Add(this.lblBuilding);
+            this.panel2.Controls.Add(this.lblUniversity);
+            this.panel2.Controls.Add(this.lblStudentNumber);
+            this.panel2.Controls.Add(this.lblSex);
+            this.panel2.Controls.Add(this.lblAge);
             this.panel2.Controls.Add(this.lblName);
-            this.panel2.Controls.Add(this.pictureBox1);
+            this.panel2.Controls.Add(this.profilePicture);
             this.panel2.Location = new System.Drawing.Point(257, 1);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(828, 650);
             this.panel2.TabIndex = 3;
             // 
-            // label7
+            // lblBuilding
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.label7.Location = new System.Drawing.Point(344, 296);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(107, 29);
-            this.label7.TabIndex = 6;
-            this.label7.Text = "Building:";
+            this.lblBuilding.AutoSize = true;
+            this.lblBuilding.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblBuilding.Location = new System.Drawing.Point(344, 296);
+            this.lblBuilding.Name = "lblBuilding";
+            this.lblBuilding.Size = new System.Drawing.Size(113, 29);
+            this.lblBuilding.TabIndex = 6;
+            this.lblBuilding.Text = "Building: ";
             // 
             // lblName
             // 
@@ -288,6 +279,16 @@
             this.panel1.Size = new System.Drawing.Size(263, 650);
             this.panel1.TabIndex = 2;
             // 
+            // profilePicture
+            // 
+            this.profilePicture.Image = global::StudentHousingBV.Properties.Resources.woman_avatar;
+            this.profilePicture.Location = new System.Drawing.Point(51, 91);
+            this.profilePicture.Name = "profilePicture";
+            this.profilePicture.Size = new System.Drawing.Size(259, 272);
+            this.profilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.profilePicture.TabIndex = 0;
+            this.profilePicture.TabStop = false;
+            // 
             // Student_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -299,17 +300,17 @@
             this.Name = "Student_App";
             this.Text = "Student Housing BV";
             this.Load += new System.EventHandler(this.Student_App_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).EndInit();
             this.ResumeLayout(false);
 
         }
 
         #endregion
 
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox profilePicture;
         private System.Windows.Forms.Button button9;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button button8;
@@ -318,15 +319,15 @@
         private System.Windows.Forms.Button button3;
         private System.Windows.Forms.Button button6;
         private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label lblUniversity;
+        private System.Windows.Forms.Label lblStudentNumber;
+        private System.Windows.Forms.Label lblSex;
+        private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button10;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Button btnChangeRoom;
+        private System.Windows.Forms.Label lblRoomNumber;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label lblBuilding;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Panel panel1;
     }
