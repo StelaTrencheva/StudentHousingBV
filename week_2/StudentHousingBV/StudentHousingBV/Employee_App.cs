@@ -35,6 +35,7 @@ namespace StudentHousingBV
             {
                 profilePicture.Image = Properties.Resources.woman_avatar;
             }
+            pnlHouseRulesEmployee.Visible = false;
         }
 
         private FolderBrowserDialog d;
@@ -55,6 +56,7 @@ namespace StudentHousingBV
 
         private void btnHouseRulesEmp_Click(object sender, EventArgs e)
         {
+            pnlHouseRulesEmployee.Visible = true;
             pnlHouseRulesEmployee.BringToFront();
             pnlEmployeeAccount.SendToBack();
             btnHouseRulesEmp.BackColor = Color.LightSteelBlue;
@@ -65,9 +67,14 @@ namespace StudentHousingBV
         private void btnMyAccountEmp_Click(object sender, EventArgs e)
         {
             pnlEmployeeAccount.BringToFront();
-            pnlHouseRulesEmployee.SendToBack();
+            pnlHouseRulesEmployee.Visible = false;
             btnHouseRulesEmp.BackColor = Color.AliceBlue; 
             btnMyAccountEmp.BackColor = Color.LightSteelBlue;
+        }
+
+        private void profilePicture_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

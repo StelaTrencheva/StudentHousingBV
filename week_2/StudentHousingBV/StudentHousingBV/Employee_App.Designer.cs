@@ -37,6 +37,7 @@
             this.lblSex = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
             this.profilePicture = new System.Windows.Forms.PictureBox();
+            this.pnlHouseRulesEmployee = new StudentHousingBV.HouseRulesEmployee();
             this.btnMyAccountEmp = new System.Windows.Forms.Button();
             this.btnHouseRulesEmp = new System.Windows.Forms.Button();
             this.btnLogOutEmp = new System.Windows.Forms.Button();
@@ -46,7 +47,6 @@
             this.btnContactPageEmp = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCommonQuestionsEmp = new System.Windows.Forms.Button();
-            this.pnlHouseRulesEmployee = new StudentHousingBV.HouseRulesEmployee();
             this.pnlEmployeeAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contractPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
@@ -152,6 +152,14 @@
             this.profilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.profilePicture.TabIndex = 0;
             this.profilePicture.TabStop = false;
+            this.profilePicture.Click += new System.EventHandler(this.profilePicture_Click);
+            // 
+            // pnlHouseRulesEmployee
+            // 
+            this.pnlHouseRulesEmployee.Location = new System.Drawing.Point(0, -3);
+            this.pnlHouseRulesEmployee.Name = "pnlHouseRulesEmployee";
+            this.pnlHouseRulesEmployee.Size = new System.Drawing.Size(828, 650);
+            this.pnlHouseRulesEmployee.TabIndex = 21;
             // 
             // btnMyAccountEmp
             // 
@@ -267,13 +275,6 @@
             this.btnCommonQuestionsEmp.TabIndex = 17;
             this.btnCommonQuestionsEmp.Text = "Common Questions";
             this.btnCommonQuestionsEmp.UseVisualStyleBackColor = false;
-            // 
-            // pnlHouseRulesEmployee
-            // 
-            this.pnlHouseRulesEmployee.Location = new System.Drawing.Point(0, -3);
-            this.pnlHouseRulesEmployee.Name = "pnlHouseRulesEmployee";
-            this.pnlHouseRulesEmployee.Size = new System.Drawing.Size(828, 650);
-            this.pnlHouseRulesEmployee.TabIndex = 21;
             // 
             // Employee_App
             // 

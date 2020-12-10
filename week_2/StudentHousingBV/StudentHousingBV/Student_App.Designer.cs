@@ -47,8 +47,8 @@
             this.lblBuilding = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.profilePicture = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pnlHouseRules = new StudentHousingBV.HouseRules();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnlMyAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             this.panel1.SuspendLayout();
@@ -217,6 +217,7 @@
             this.btnChangeRoom.TabIndex = 18;
             this.btnChangeRoom.Text = "Change room";
             this.btnChangeRoom.UseVisualStyleBackColor = false;
+            this.btnChangeRoom.Click += new System.EventHandler(this.btnChangeRoom_Click);
             // 
             // lblRoomNumber
             // 
@@ -276,6 +277,13 @@
             this.profilePicture.TabIndex = 0;
             this.profilePicture.TabStop = false;
             // 
+            // pnlHouseRules
+            // 
+            this.pnlHouseRules.Location = new System.Drawing.Point(0, 0);
+            this.pnlHouseRules.Name = "pnlHouseRules";
+            this.pnlHouseRules.Size = new System.Drawing.Size(824, 650);
+            this.pnlHouseRules.TabIndex = 20;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Thistle;
@@ -292,13 +300,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(263, 650);
             this.panel1.TabIndex = 2;
-            // 
-            // pnlHouseRules
-            // 
-            this.pnlHouseRules.Location = new System.Drawing.Point(0, 0);
-            this.pnlHouseRules.Name = "pnlHouseRules";
-            this.pnlHouseRules.Size = new System.Drawing.Size(824, 650);
-            this.pnlHouseRules.TabIndex = 20;
             // 
             // Student_App
             // 

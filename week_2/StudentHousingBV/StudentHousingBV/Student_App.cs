@@ -40,22 +40,31 @@ namespace StudentHousingBV
             {
                 profilePicture.Image = Properties.Resources.man_avatar;
             }
+            pnlHouseRules.Visible = false;
         }
 
         private void btnMyAccount_Click(object sender, EventArgs e)
         {
+
             pnlMyAccount.BringToFront();
             btnMyAccount.BackColor = Color.LightSteelBlue;
             btnHouseRules.BackColor = Color.AliceBlue;
-            pnlHouseRules.SendToBack();
+            pnlHouseRules.Visible=false;
         }
 
 
         private void btnHouseRules_Click_1(object sender, EventArgs e)
         {
+            pnlHouseRules.Visible = true;
             pnlHouseRules.BringToFront();
+            pnlMyAccount.SendToBack();
             btnHouseRules.BackColor = Color.LightSteelBlue;
             btnMyAccount.BackColor = Color.AliceBlue;
+
+        }
+
+        private void btnChangeRoom_Click(object sender, EventArgs e)
+        {
 
         }
     }
