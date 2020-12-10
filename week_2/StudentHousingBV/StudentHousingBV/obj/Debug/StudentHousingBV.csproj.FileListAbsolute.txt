@@ -36,3 +36,4 @@ C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV
 C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.HouseRulesEmployee.resources
 D:\stela\fontys\software_engineering_semester1\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.HouseRules.resources
 D:\stela\fontys\software_engineering_semester1\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.HouseRulesEmployee.resources
+C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.ComplaintsStudent.resources

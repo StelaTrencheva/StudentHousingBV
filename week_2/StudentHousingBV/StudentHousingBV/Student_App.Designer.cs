@@ -44,11 +44,12 @@
             this.btnChangeRoom = new System.Windows.Forms.Button();
             this.lblRoomNumber = new System.Windows.Forms.Label();
             this.pnlMyAccount = new System.Windows.Forms.Panel();
+            this.pnlcomplaintsStudent1 = new StudentHousingBV.ComplaintsStudent();
             this.lblBuilding = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.profilePicture = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.pnlHouseRules = new StudentHousingBV.HouseRules();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.pnlMyAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             this.panel1.SuspendLayout();
@@ -249,10 +250,18 @@
             this.pnlMyAccount.Controls.Add(this.lblName);
             this.pnlMyAccount.Controls.Add(this.profilePicture);
             this.pnlMyAccount.Controls.Add(this.pnlHouseRules);
+            this.pnlMyAccount.Controls.Add(this.pnlcomplaintsStudent1);
             this.pnlMyAccount.Location = new System.Drawing.Point(257, 1);
             this.pnlMyAccount.Name = "pnlMyAccount";
             this.pnlMyAccount.Size = new System.Drawing.Size(828, 650);
             this.pnlMyAccount.TabIndex = 3;
+            // 
+            // pnlcomplaintsStudent1
+            // 
+            this.pnlcomplaintsStudent1.Location = new System.Drawing.Point(1, 0);
+            this.pnlcomplaintsStudent1.Name = "pnlcomplaintsStudent1";
+            this.pnlcomplaintsStudent1.Size = new System.Drawing.Size(824, 650);
+            this.pnlcomplaintsStudent1.TabIndex = 21;
             // 
             // lblBuilding
             // 
@@ -284,6 +293,13 @@
             this.profilePicture.TabIndex = 0;
             this.profilePicture.TabStop = false;
             // 
+            // pnlHouseRules
+            // 
+            this.pnlHouseRules.Location = new System.Drawing.Point(0, 0);
+            this.pnlHouseRules.Name = "pnlHouseRules";
+            this.pnlHouseRules.Size = new System.Drawing.Size(824, 650);
+            this.pnlHouseRules.TabIndex = 20;
+            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Thistle;
@@ -300,13 +316,6 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(263, 650);
             this.panel1.TabIndex = 2;
-            // 
-            // pnlHouseRules
-            // 
-            this.pnlHouseRules.Location = new System.Drawing.Point(0, 0);
-            this.pnlHouseRules.Name = "pnlHouseRules";
-            this.pnlHouseRules.Size = new System.Drawing.Size(824, 650);
-            this.pnlHouseRules.TabIndex = 20;
             // 
             // Student_App
             // 
@@ -350,5 +359,6 @@
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Panel panel1;
         private HouseRules pnlHouseRules;
+        private ComplaintsStudent pnlcomplaintsStudent1;
     }
 }
