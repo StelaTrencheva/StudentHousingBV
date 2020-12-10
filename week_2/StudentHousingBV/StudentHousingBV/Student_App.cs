@@ -18,10 +18,12 @@ namespace StudentHousingBV
         {
             InitializeComponent();
             this.student = student;
+            pnlMyAccount.BringToFront();
         }
        
         private void Student_App_Load(object sender, EventArgs e)
         {
+            
             int building = rnd.Next(1, 10);
             lblName.Text += $"{student.GetName()}";
             lblAge.Text += $"{student.GetAge()}";
@@ -40,6 +42,21 @@ namespace StudentHousingBV
             }
         }
 
-        
+        private void btnMyAccount_Click(object sender, EventArgs e)
+        {
+            pnlMyAccount.BringToFront();
+            btnMyAccount.BackColor = Color.LightSteelBlue;
+            btnHouseRules.BackColor = Color.AliceBlue;
+            pnlHouseRules.SendToBack();
+        }
+
+
+        private void btnHouseRules_Click_1(object sender, EventArgs e)
+        {
+            pnlHouseRules.BringToFront();
+            btnHouseRules.BackColor = Color.LightSteelBlue;
+            btnMyAccount.BackColor = Color.AliceBlue;
+
+        }
     }
 }

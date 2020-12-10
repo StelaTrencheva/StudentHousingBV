@@ -18,6 +18,7 @@ namespace StudentHousingBV
         {
             InitializeComponent();
             this.employee = employee;
+            pnlEmployeeAccount.BringToFront();
         }
 
         private void Employee_App_Load(object sender, EventArgs e)
@@ -50,6 +51,23 @@ namespace StudentHousingBV
                 lblDownloadResult.Text = "Download completed! Check your Downloads folder!";
             }
             
+        }
+
+        private void btnHouseRulesEmp_Click(object sender, EventArgs e)
+        {
+            pnlHouseRulesEmployee.BringToFront();
+            pnlEmployeeAccount.SendToBack();
+            btnHouseRulesEmp.BackColor = Color.LightSteelBlue;
+            btnMyAccountEmp.BackColor = Color.AliceBlue;
+
+        }
+
+        private void btnMyAccountEmp_Click(object sender, EventArgs e)
+        {
+            pnlEmployeeAccount.BringToFront();
+            pnlHouseRulesEmployee.SendToBack();
+            btnHouseRulesEmp.BackColor = Color.AliceBlue; 
+            btnMyAccountEmp.BackColor = Color.LightSteelBlue;
         }
     }
 }

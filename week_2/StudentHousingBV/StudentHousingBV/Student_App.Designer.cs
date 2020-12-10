@@ -28,127 +28,129 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.button9 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button7 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnCommonQuestions = new System.Windows.Forms.Button();
+            this.btnHouseRules = new System.Windows.Forms.Button();
+            this.btnLogOut = new System.Windows.Forms.Button();
+            this.btnAnnouncements = new System.Windows.Forms.Button();
+            this.btnMyTasks = new System.Windows.Forms.Button();
+            this.btnComplaints = new System.Windows.Forms.Button();
+            this.btnWallet = new System.Windows.Forms.Button();
+            this.btnContactPage = new System.Windows.Forms.Button();
             this.lblUniversity = new System.Windows.Forms.Label();
             this.lblStudentNumber = new System.Windows.Forms.Label();
             this.lblSex = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
-            this.button5 = new System.Windows.Forms.Button();
+            this.btnMyAccount = new System.Windows.Forms.Button();
             this.btnChangeRoom = new System.Windows.Forms.Button();
             this.lblRoomNumber = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlMyAccount = new System.Windows.Forms.Panel();
             this.lblBuilding = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
             this.profilePicture = new System.Windows.Forms.PictureBox();
-            this.panel2.SuspendLayout();
-            this.panel1.SuspendLayout();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.pnlHouseRules = new StudentHousingBV.HouseRules();
+            this.pnlMyAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // button9
+            // btnCommonQuestions
             // 
-            this.button9.BackColor = System.Drawing.Color.AliceBlue;
-            this.button9.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button9.Location = new System.Drawing.Point(9, 489);
-            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(237, 87);
-            this.button9.TabIndex = 17;
-            this.button9.Text = "Common Questions";
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnCommonQuestions.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnCommonQuestions.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnCommonQuestions.Location = new System.Drawing.Point(9, 489);
+            this.btnCommonQuestions.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCommonQuestions.Name = "btnCommonQuestions";
+            this.btnCommonQuestions.Size = new System.Drawing.Size(237, 87);
+            this.btnCommonQuestions.TabIndex = 17;
+            this.btnCommonQuestions.Text = "Common Questions";
+            this.btnCommonQuestions.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // btnHouseRules
             // 
-            this.button1.BackColor = System.Drawing.Color.AliceBlue;
-            this.button1.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(9, 25);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(237, 52);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "House Rules";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnHouseRules.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnHouseRules.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnHouseRules.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnHouseRules.Location = new System.Drawing.Point(9, 25);
+            this.btnHouseRules.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnHouseRules.Name = "btnHouseRules";
+            this.btnHouseRules.Size = new System.Drawing.Size(237, 52);
+            this.btnHouseRules.TabIndex = 9;
+            this.btnHouseRules.Text = "House Rules";
+            this.btnHouseRules.UseVisualStyleBackColor = false;
+            this.btnHouseRules.Click += new System.EventHandler(this.btnHouseRules_Click_1);
             // 
-            // button8
+            // btnLogOut
             // 
-            this.button8.BackColor = System.Drawing.Color.AliceBlue;
-            this.button8.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button8.Location = new System.Drawing.Point(9, 583);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(237, 52);
-            this.button8.TabIndex = 16;
-            this.button8.Text = "Log out";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnLogOut.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnLogOut.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnLogOut.Location = new System.Drawing.Point(9, 583);
+            this.btnLogOut.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogOut.Name = "btnLogOut";
+            this.btnLogOut.Size = new System.Drawing.Size(237, 52);
+            this.btnLogOut.TabIndex = 16;
+            this.btnLogOut.Text = "Log out";
+            this.btnLogOut.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnAnnouncements
             // 
-            this.button2.BackColor = System.Drawing.Color.AliceBlue;
-            this.button2.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(9, 91);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(237, 52);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Announcements";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnAnnouncements.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnAnnouncements.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnAnnouncements.Location = new System.Drawing.Point(9, 91);
+            this.btnAnnouncements.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAnnouncements.Name = "btnAnnouncements";
+            this.btnAnnouncements.Size = new System.Drawing.Size(237, 52);
+            this.btnAnnouncements.TabIndex = 10;
+            this.btnAnnouncements.Text = "Announcements";
+            this.btnAnnouncements.UseVisualStyleBackColor = false;
             // 
-            // button7
+            // btnMyTasks
             // 
-            this.button7.BackColor = System.Drawing.Color.AliceBlue;
-            this.button7.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button7.Location = new System.Drawing.Point(9, 432);
-            this.button7.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button7.Name = "button7";
-            this.button7.Size = new System.Drawing.Size(237, 52);
-            this.button7.TabIndex = 15;
-            this.button7.Text = "My tasks";
-            this.button7.UseVisualStyleBackColor = false;
+            this.btnMyTasks.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnMyTasks.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnMyTasks.Location = new System.Drawing.Point(9, 432);
+            this.btnMyTasks.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMyTasks.Name = "btnMyTasks";
+            this.btnMyTasks.Size = new System.Drawing.Size(237, 52);
+            this.btnMyTasks.TabIndex = 15;
+            this.btnMyTasks.Text = "My tasks";
+            this.btnMyTasks.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnComplaints
             // 
-            this.button3.BackColor = System.Drawing.Color.AliceBlue;
-            this.button3.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(9, 158);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(237, 52);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Complaints";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnComplaints.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnComplaints.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnComplaints.Location = new System.Drawing.Point(9, 158);
+            this.btnComplaints.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnComplaints.Name = "btnComplaints";
+            this.btnComplaints.Size = new System.Drawing.Size(237, 52);
+            this.btnComplaints.TabIndex = 11;
+            this.btnComplaints.Text = "Complaints";
+            this.btnComplaints.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnWallet
             // 
-            this.button6.BackColor = System.Drawing.Color.AliceBlue;
-            this.button6.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button6.Location = new System.Drawing.Point(9, 375);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(237, 52);
-            this.button6.TabIndex = 14;
-            this.button6.Text = "Wallet";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnWallet.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnWallet.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnWallet.Location = new System.Drawing.Point(9, 375);
+            this.btnWallet.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnWallet.Name = "btnWallet";
+            this.btnWallet.Size = new System.Drawing.Size(237, 52);
+            this.btnWallet.TabIndex = 14;
+            this.btnWallet.Text = "Wallet";
+            this.btnWallet.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnContactPage
             // 
-            this.button4.BackColor = System.Drawing.Color.AliceBlue;
-            this.button4.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(9, 226);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(237, 52);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Contact Page";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnContactPage.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnContactPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnContactPage.Location = new System.Drawing.Point(9, 226);
+            this.btnContactPage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnContactPage.Name = "btnContactPage";
+            this.btnContactPage.Size = new System.Drawing.Size(237, 52);
+            this.btnContactPage.TabIndex = 12;
+            this.btnContactPage.Text = "Contact Page";
+            this.btnContactPage.UseVisualStyleBackColor = false;
             // 
             // lblUniversity
             // 
@@ -190,22 +192,23 @@
             this.lblAge.TabIndex = 2;
             this.lblAge.Text = "Age: ";
             // 
-            // button5
+            // btnMyAccount
             // 
-            this.button5.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button5.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.Location = new System.Drawing.Point(9, 316);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(237, 52);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "My Account";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnMyAccount.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnMyAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnMyAccount.Location = new System.Drawing.Point(9, 316);
+            this.btnMyAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMyAccount.Name = "btnMyAccount";
+            this.btnMyAccount.Size = new System.Drawing.Size(237, 52);
+            this.btnMyAccount.TabIndex = 13;
+            this.btnMyAccount.Text = "My Account";
+            this.btnMyAccount.UseVisualStyleBackColor = false;
+            this.btnMyAccount.Click += new System.EventHandler(this.btnMyAccount_Click);
             // 
             // btnChangeRoom
             // 
             this.btnChangeRoom.BackColor = System.Drawing.Color.Lavender;
-            this.btnChangeRoom.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnChangeRoom.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnChangeRoom.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnChangeRoom.Location = new System.Drawing.Point(349, 402);
             this.btnChangeRoom.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -225,22 +228,23 @@
             this.lblRoomNumber.TabIndex = 7;
             this.lblRoomNumber.Text = "Room number: ";
             // 
-            // panel2
+            // pnlMyAccount
             // 
-            this.panel2.BackColor = System.Drawing.Color.AliceBlue;
-            this.panel2.Controls.Add(this.btnChangeRoom);
-            this.panel2.Controls.Add(this.lblRoomNumber);
-            this.panel2.Controls.Add(this.lblBuilding);
-            this.panel2.Controls.Add(this.lblUniversity);
-            this.panel2.Controls.Add(this.lblStudentNumber);
-            this.panel2.Controls.Add(this.lblSex);
-            this.panel2.Controls.Add(this.lblAge);
-            this.panel2.Controls.Add(this.lblName);
-            this.panel2.Controls.Add(this.profilePicture);
-            this.panel2.Location = new System.Drawing.Point(257, 1);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(828, 650);
-            this.panel2.TabIndex = 3;
+            this.pnlMyAccount.BackColor = System.Drawing.Color.AliceBlue;
+            this.pnlMyAccount.Controls.Add(this.btnChangeRoom);
+            this.pnlMyAccount.Controls.Add(this.lblRoomNumber);
+            this.pnlMyAccount.Controls.Add(this.lblBuilding);
+            this.pnlMyAccount.Controls.Add(this.lblUniversity);
+            this.pnlMyAccount.Controls.Add(this.lblStudentNumber);
+            this.pnlMyAccount.Controls.Add(this.lblSex);
+            this.pnlMyAccount.Controls.Add(this.lblAge);
+            this.pnlMyAccount.Controls.Add(this.lblName);
+            this.pnlMyAccount.Controls.Add(this.profilePicture);
+            this.pnlMyAccount.Controls.Add(this.pnlHouseRules);
+            this.pnlMyAccount.Location = new System.Drawing.Point(257, 1);
+            this.pnlMyAccount.Name = "pnlMyAccount";
+            this.pnlMyAccount.Size = new System.Drawing.Size(828, 650);
+            this.pnlMyAccount.TabIndex = 3;
             // 
             // lblBuilding
             // 
@@ -262,23 +266,6 @@
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Name: ";
             // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.Thistle;
-            this.panel1.Controls.Add(this.button9);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button7);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button5);
-            this.panel1.Location = new System.Drawing.Point(-3, 1);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(263, 650);
-            this.panel1.TabIndex = 2;
-            // 
             // profilePicture
             // 
             this.profilePicture.Image = global::StudentHousingBV.Properties.Resources.woman_avatar;
@@ -289,21 +276,45 @@
             this.profilePicture.TabIndex = 0;
             this.profilePicture.TabStop = false;
             // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.Thistle;
+            this.panel1.Controls.Add(this.btnCommonQuestions);
+            this.panel1.Controls.Add(this.btnHouseRules);
+            this.panel1.Controls.Add(this.btnLogOut);
+            this.panel1.Controls.Add(this.btnAnnouncements);
+            this.panel1.Controls.Add(this.btnMyTasks);
+            this.panel1.Controls.Add(this.btnComplaints);
+            this.panel1.Controls.Add(this.btnWallet);
+            this.panel1.Controls.Add(this.btnContactPage);
+            this.panel1.Controls.Add(this.btnMyAccount);
+            this.panel1.Location = new System.Drawing.Point(-3, 1);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(263, 650);
+            this.panel1.TabIndex = 2;
+            // 
+            // pnlHouseRules
+            // 
+            this.pnlHouseRules.Location = new System.Drawing.Point(0, 0);
+            this.pnlHouseRules.Name = "pnlHouseRules";
+            this.pnlHouseRules.Size = new System.Drawing.Size(824, 650);
+            this.pnlHouseRules.TabIndex = 20;
+            // 
             // Student_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1082, 653);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnlMyAccount);
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Student_App";
             this.Text = "Student Housing BV";
             this.Load += new System.EventHandler(this.Student_App_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel1.ResumeLayout(false);
+            this.pnlMyAccount.ResumeLayout(false);
+            this.pnlMyAccount.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -311,24 +322,25 @@
         #endregion
 
         private System.Windows.Forms.PictureBox profilePicture;
-        private System.Windows.Forms.Button button9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button7;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnCommonQuestions;
+        private System.Windows.Forms.Button btnHouseRules;
+        private System.Windows.Forms.Button btnLogOut;
+        private System.Windows.Forms.Button btnAnnouncements;
+        private System.Windows.Forms.Button btnMyTasks;
+        private System.Windows.Forms.Button btnComplaints;
+        private System.Windows.Forms.Button btnWallet;
+        private System.Windows.Forms.Button btnContactPage;
         private System.Windows.Forms.Label lblUniversity;
         private System.Windows.Forms.Label lblStudentNumber;
         private System.Windows.Forms.Label lblSex;
         private System.Windows.Forms.Label lblAge;
-        private System.Windows.Forms.Button button5;
+        private System.Windows.Forms.Button btnMyAccount;
         private System.Windows.Forms.Button btnChangeRoom;
         private System.Windows.Forms.Label lblRoomNumber;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlMyAccount;
         private System.Windows.Forms.Label lblBuilding;
         private System.Windows.Forms.Label lblName;
         private System.Windows.Forms.Panel panel1;
+        private HouseRules pnlHouseRules;
     }
 }

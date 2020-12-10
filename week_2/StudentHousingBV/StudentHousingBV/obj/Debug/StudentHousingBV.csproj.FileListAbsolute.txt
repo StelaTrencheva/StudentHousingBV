@@ -20,3 +20,17 @@ D:\stela\fontys\software_engineering_semester1\p-cb-s01-1-stelatrencheva-veronik
 D:\stela\fontys\software_engineering_semester1\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.pdb
 D:\stela\fontys\software_engineering_semester1\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Student_App.resources
 D:\stela\fontys\software_engineering_semester1\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Employee_App.resources
+C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe.config
+C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.exe
+C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\bin\Debug\StudentHousingBV.pdb
+C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csprojAssemblyReference.cache
+C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Employee_App.resources
+C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.LogInPage.resources
+C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Properties.Resources.resources
+C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Student_App.resources
+C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.GenerateResource.cache
+C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.csproj.CoreCompileInputs.cache
+C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.exe
+C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.pdb
+C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.HouseRules.resources
+C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.HouseRulesEmployee.resources

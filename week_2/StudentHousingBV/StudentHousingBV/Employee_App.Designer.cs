@@ -30,23 +30,24 @@
         {
             this.lblEmployeeNumber = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
+            this.pnlEmployeeAccount = new System.Windows.Forms.Panel();
+            this.lblDownloadResult = new System.Windows.Forms.Label();
             this.btnDownloadContract = new System.Windows.Forms.Button();
             this.contractPicture = new System.Windows.Forms.PictureBox();
             this.lblSex = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
             this.profilePicture = new System.Windows.Forms.PictureBox();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button8 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.btnMyAccountEmp = new System.Windows.Forms.Button();
+            this.btnHouseRulesEmp = new System.Windows.Forms.Button();
+            this.btnLogOutEmp = new System.Windows.Forms.Button();
+            this.btnAnnouncementsEmp = new System.Windows.Forms.Button();
+            this.btnComplaintsEmp = new System.Windows.Forms.Button();
+            this.btnWalletEmp = new System.Windows.Forms.Button();
+            this.btnContactPageEmp = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button9 = new System.Windows.Forms.Button();
-            this.lblDownloadResult = new System.Windows.Forms.Label();
-            this.panel2.SuspendLayout();
+            this.btnCommonQuestionsEmp = new System.Windows.Forms.Button();
+            this.pnlHouseRulesEmployee = new StudentHousingBV.HouseRulesEmployee();
+            this.pnlEmployeeAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contractPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             this.panel1.SuspendLayout();
@@ -72,26 +73,36 @@
             this.lblName.TabIndex = 1;
             this.lblName.Text = "Name: ";
             // 
-            // panel2
+            // pnlEmployeeAccount
             // 
-            this.panel2.BackColor = System.Drawing.Color.AliceBlue;
-            this.panel2.Controls.Add(this.lblDownloadResult);
-            this.panel2.Controls.Add(this.btnDownloadContract);
-            this.panel2.Controls.Add(this.contractPicture);
-            this.panel2.Controls.Add(this.lblEmployeeNumber);
-            this.panel2.Controls.Add(this.lblSex);
-            this.panel2.Controls.Add(this.lblAge);
-            this.panel2.Controls.Add(this.lblName);
-            this.panel2.Controls.Add(this.profilePicture);
-            this.panel2.Location = new System.Drawing.Point(257, 3);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(828, 650);
-            this.panel2.TabIndex = 5;
+            this.pnlEmployeeAccount.BackColor = System.Drawing.Color.AliceBlue;
+            this.pnlEmployeeAccount.Controls.Add(this.lblDownloadResult);
+            this.pnlEmployeeAccount.Controls.Add(this.btnDownloadContract);
+            this.pnlEmployeeAccount.Controls.Add(this.contractPicture);
+            this.pnlEmployeeAccount.Controls.Add(this.lblEmployeeNumber);
+            this.pnlEmployeeAccount.Controls.Add(this.lblSex);
+            this.pnlEmployeeAccount.Controls.Add(this.lblAge);
+            this.pnlEmployeeAccount.Controls.Add(this.lblName);
+            this.pnlEmployeeAccount.Controls.Add(this.profilePicture);
+            this.pnlEmployeeAccount.Controls.Add(this.pnlHouseRulesEmployee);
+            this.pnlEmployeeAccount.Location = new System.Drawing.Point(257, 3);
+            this.pnlEmployeeAccount.Name = "pnlEmployeeAccount";
+            this.pnlEmployeeAccount.Size = new System.Drawing.Size(828, 650);
+            this.pnlEmployeeAccount.TabIndex = 5;
+            // 
+            // lblDownloadResult
+            // 
+            this.lblDownloadResult.AutoSize = true;
+            this.lblDownloadResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblDownloadResult.Location = new System.Drawing.Point(351, 596);
+            this.lblDownloadResult.Name = "lblDownloadResult";
+            this.lblDownloadResult.Size = new System.Drawing.Size(0, 20);
+            this.lblDownloadResult.TabIndex = 20;
             // 
             // btnDownloadContract
             // 
             this.btnDownloadContract.BackColor = System.Drawing.Color.Lavender;
-            this.btnDownloadContract.Font = new System.Drawing.Font("Roboto", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnDownloadContract.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.btnDownloadContract.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnDownloadContract.Location = new System.Drawing.Point(480, 543);
             this.btnDownloadContract.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -142,140 +153,140 @@
             this.profilePicture.TabIndex = 0;
             this.profilePicture.TabStop = false;
             // 
-            // button5
+            // btnMyAccountEmp
             // 
-            this.button5.BackColor = System.Drawing.Color.LightSteelBlue;
-            this.button5.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button5.Location = new System.Drawing.Point(9, 325);
-            this.button5.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(237, 52);
-            this.button5.TabIndex = 13;
-            this.button5.Text = "My Account";
-            this.button5.UseVisualStyleBackColor = false;
+            this.btnMyAccountEmp.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnMyAccountEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnMyAccountEmp.Location = new System.Drawing.Point(9, 325);
+            this.btnMyAccountEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMyAccountEmp.Name = "btnMyAccountEmp";
+            this.btnMyAccountEmp.Size = new System.Drawing.Size(237, 52);
+            this.btnMyAccountEmp.TabIndex = 13;
+            this.btnMyAccountEmp.Text = "My Account";
+            this.btnMyAccountEmp.UseVisualStyleBackColor = false;
+            this.btnMyAccountEmp.Click += new System.EventHandler(this.btnMyAccountEmp_Click);
             // 
-            // button1
+            // btnHouseRulesEmp
             // 
-            this.button1.BackColor = System.Drawing.Color.AliceBlue;
-            this.button1.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button1.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.button1.Location = new System.Drawing.Point(9, 25);
-            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(237, 52);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "House Rules";
-            this.button1.UseVisualStyleBackColor = false;
+            this.btnHouseRulesEmp.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnHouseRulesEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnHouseRulesEmp.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.btnHouseRulesEmp.Location = new System.Drawing.Point(9, 25);
+            this.btnHouseRulesEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnHouseRulesEmp.Name = "btnHouseRulesEmp";
+            this.btnHouseRulesEmp.Size = new System.Drawing.Size(237, 52);
+            this.btnHouseRulesEmp.TabIndex = 9;
+            this.btnHouseRulesEmp.Text = "House Rules";
+            this.btnHouseRulesEmp.UseVisualStyleBackColor = false;
+            this.btnHouseRulesEmp.Click += new System.EventHandler(this.btnHouseRulesEmp_Click);
             // 
-            // button8
+            // btnLogOutEmp
             // 
-            this.button8.BackColor = System.Drawing.Color.AliceBlue;
-            this.button8.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button8.Location = new System.Drawing.Point(9, 564);
-            this.button8.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button8.Name = "button8";
-            this.button8.Size = new System.Drawing.Size(237, 52);
-            this.button8.TabIndex = 16;
-            this.button8.Text = "Log out";
-            this.button8.UseVisualStyleBackColor = false;
+            this.btnLogOutEmp.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnLogOutEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnLogOutEmp.Location = new System.Drawing.Point(9, 564);
+            this.btnLogOutEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnLogOutEmp.Name = "btnLogOutEmp";
+            this.btnLogOutEmp.Size = new System.Drawing.Size(237, 52);
+            this.btnLogOutEmp.TabIndex = 16;
+            this.btnLogOutEmp.Text = "Log out";
+            this.btnLogOutEmp.UseVisualStyleBackColor = false;
             // 
-            // button2
+            // btnAnnouncementsEmp
             // 
-            this.button2.BackColor = System.Drawing.Color.AliceBlue;
-            this.button2.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button2.Location = new System.Drawing.Point(9, 91);
-            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(237, 52);
-            this.button2.TabIndex = 10;
-            this.button2.Text = "Announcements";
-            this.button2.UseVisualStyleBackColor = false;
+            this.btnAnnouncementsEmp.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnAnnouncementsEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnAnnouncementsEmp.Location = new System.Drawing.Point(9, 91);
+            this.btnAnnouncementsEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnAnnouncementsEmp.Name = "btnAnnouncementsEmp";
+            this.btnAnnouncementsEmp.Size = new System.Drawing.Size(237, 52);
+            this.btnAnnouncementsEmp.TabIndex = 10;
+            this.btnAnnouncementsEmp.Text = "Announcements";
+            this.btnAnnouncementsEmp.UseVisualStyleBackColor = false;
             // 
-            // button3
+            // btnComplaintsEmp
             // 
-            this.button3.BackColor = System.Drawing.Color.AliceBlue;
-            this.button3.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button3.Location = new System.Drawing.Point(9, 158);
-            this.button3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(237, 52);
-            this.button3.TabIndex = 11;
-            this.button3.Text = "Complaints";
-            this.button3.UseVisualStyleBackColor = false;
+            this.btnComplaintsEmp.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnComplaintsEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnComplaintsEmp.Location = new System.Drawing.Point(9, 158);
+            this.btnComplaintsEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnComplaintsEmp.Name = "btnComplaintsEmp";
+            this.btnComplaintsEmp.Size = new System.Drawing.Size(237, 52);
+            this.btnComplaintsEmp.TabIndex = 11;
+            this.btnComplaintsEmp.Text = "Complaints";
+            this.btnComplaintsEmp.UseVisualStyleBackColor = false;
             // 
-            // button6
+            // btnWalletEmp
             // 
-            this.button6.BackColor = System.Drawing.Color.AliceBlue;
-            this.button6.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button6.Location = new System.Drawing.Point(9, 494);
-            this.button6.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(237, 52);
-            this.button6.TabIndex = 14;
-            this.button6.Text = "Wallet";
-            this.button6.UseVisualStyleBackColor = false;
+            this.btnWalletEmp.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnWalletEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnWalletEmp.Location = new System.Drawing.Point(9, 494);
+            this.btnWalletEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnWalletEmp.Name = "btnWalletEmp";
+            this.btnWalletEmp.Size = new System.Drawing.Size(237, 52);
+            this.btnWalletEmp.TabIndex = 14;
+            this.btnWalletEmp.Text = "Wallet";
+            this.btnWalletEmp.UseVisualStyleBackColor = false;
             // 
-            // button4
+            // btnContactPageEmp
             // 
-            this.button4.BackColor = System.Drawing.Color.AliceBlue;
-            this.button4.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button4.Location = new System.Drawing.Point(9, 226);
-            this.button4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(237, 52);
-            this.button4.TabIndex = 12;
-            this.button4.Text = "Contact Page";
-            this.button4.UseVisualStyleBackColor = false;
+            this.btnContactPageEmp.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnContactPageEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnContactPageEmp.Location = new System.Drawing.Point(9, 226);
+            this.btnContactPageEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnContactPageEmp.Name = "btnContactPageEmp";
+            this.btnContactPageEmp.Size = new System.Drawing.Size(237, 52);
+            this.btnContactPageEmp.TabIndex = 12;
+            this.btnContactPageEmp.Text = "Contact Page";
+            this.btnContactPageEmp.UseVisualStyleBackColor = false;
             // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Thistle;
-            this.panel1.Controls.Add(this.button9);
-            this.panel1.Controls.Add(this.button1);
-            this.panel1.Controls.Add(this.button8);
-            this.panel1.Controls.Add(this.button2);
-            this.panel1.Controls.Add(this.button3);
-            this.panel1.Controls.Add(this.button6);
-            this.panel1.Controls.Add(this.button4);
-            this.panel1.Controls.Add(this.button5);
+            this.panel1.Controls.Add(this.btnCommonQuestionsEmp);
+            this.panel1.Controls.Add(this.btnHouseRulesEmp);
+            this.panel1.Controls.Add(this.btnLogOutEmp);
+            this.panel1.Controls.Add(this.btnAnnouncementsEmp);
+            this.panel1.Controls.Add(this.btnComplaintsEmp);
+            this.panel1.Controls.Add(this.btnWalletEmp);
+            this.panel1.Controls.Add(this.btnContactPageEmp);
+            this.panel1.Controls.Add(this.btnMyAccountEmp);
             this.panel1.Location = new System.Drawing.Point(-3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(263, 650);
             this.panel1.TabIndex = 4;
             // 
-            // button9
+            // btnCommonQuestionsEmp
             // 
-            this.button9.BackColor = System.Drawing.Color.AliceBlue;
-            this.button9.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.button9.Location = new System.Drawing.Point(9, 391);
-            this.button9.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.button9.Name = "button9";
-            this.button9.Size = new System.Drawing.Size(237, 87);
-            this.button9.TabIndex = 17;
-            this.button9.Text = "Common Questions";
-            this.button9.UseVisualStyleBackColor = false;
+            this.btnCommonQuestionsEmp.BackColor = System.Drawing.Color.AliceBlue;
+            this.btnCommonQuestionsEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnCommonQuestionsEmp.Location = new System.Drawing.Point(9, 391);
+            this.btnCommonQuestionsEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnCommonQuestionsEmp.Name = "btnCommonQuestionsEmp";
+            this.btnCommonQuestionsEmp.Size = new System.Drawing.Size(237, 87);
+            this.btnCommonQuestionsEmp.TabIndex = 17;
+            this.btnCommonQuestionsEmp.Text = "Common Questions";
+            this.btnCommonQuestionsEmp.UseVisualStyleBackColor = false;
             // 
-            // lblDownloadResult
+            // pnlHouseRulesEmployee
             // 
-            this.lblDownloadResult.AutoSize = true;
-            this.lblDownloadResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblDownloadResult.Location = new System.Drawing.Point(351, 596);
-            this.lblDownloadResult.Name = "lblDownloadResult";
-            this.lblDownloadResult.Size = new System.Drawing.Size(0, 20);
-            this.lblDownloadResult.TabIndex = 20;
+            this.pnlHouseRulesEmployee.Location = new System.Drawing.Point(0, -3);
+            this.pnlHouseRulesEmployee.Name = "pnlHouseRulesEmployee";
+            this.pnlHouseRulesEmployee.Size = new System.Drawing.Size(828, 650);
+            this.pnlHouseRulesEmployee.TabIndex = 21;
             // 
             // Employee_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1082, 653);
-            this.Controls.Add(this.panel2);
+            this.Controls.Add(this.pnlEmployeeAccount);
             this.Controls.Add(this.panel1);
             this.Name = "Employee_App";
             this.Text = "Employee_App";
             this.Load += new System.EventHandler(this.Employee_App_Load);
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
+            this.pnlEmployeeAccount.ResumeLayout(false);
+            this.pnlEmployeeAccount.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contractPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -286,21 +297,22 @@
         #endregion
         private System.Windows.Forms.Label lblEmployeeNumber;
         private System.Windows.Forms.Label lblName;
-        private System.Windows.Forms.Panel panel2;
+        private System.Windows.Forms.Panel pnlEmployeeAccount;
         private System.Windows.Forms.Label lblSex;
         private System.Windows.Forms.Label lblAge;
         private System.Windows.Forms.PictureBox profilePicture;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button8;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button4;
+        private System.Windows.Forms.Button btnMyAccountEmp;
+        private System.Windows.Forms.Button btnHouseRulesEmp;
+        private System.Windows.Forms.Button btnLogOutEmp;
+        private System.Windows.Forms.Button btnAnnouncementsEmp;
+        private System.Windows.Forms.Button btnComplaintsEmp;
+        private System.Windows.Forms.Button btnWalletEmp;
+        private System.Windows.Forms.Button btnContactPageEmp;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button9;
+        private System.Windows.Forms.Button btnCommonQuestionsEmp;
         private System.Windows.Forms.PictureBox contractPicture;
         private System.Windows.Forms.Button btnDownloadContract;
         private System.Windows.Forms.Label lblDownloadResult;
+        private HouseRulesEmployee pnlHouseRulesEmployee;
     }
 }
