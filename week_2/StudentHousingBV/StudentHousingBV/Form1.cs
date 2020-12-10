@@ -91,7 +91,6 @@ namespace StudentHousingBV
             SelectedIndex = cbbProfiles.SelectedIndex;
             if (rBStudents.Checked)
             {
-                
                 Student_App student_app = new Student_App(ListOfAllStudents[SelectedIndex]);
                 student_app.Show();
                 this.Hide();
@@ -104,6 +103,7 @@ namespace StudentHousingBV
             }
         }
         
+      
 
         private void LogInPage_Load(object sender, EventArgs e)
         {

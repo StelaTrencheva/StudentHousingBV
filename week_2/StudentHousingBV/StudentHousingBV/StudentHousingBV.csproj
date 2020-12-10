@@ -46,6 +46,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="ComplaintsEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ComplaintsEmployee.Designer.cs">
+      <DependentUpon>ComplaintsEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="ComplaintsStudent.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -86,6 +92,9 @@
     <Compile Include="Student_App.Designer.cs">
       <DependentUpon>Student_App.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="ComplaintsEmployee.resx">
+      <DependentUpon>ComplaintsEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ComplaintsStudent.resx">
       <DependentUpon>ComplaintsStudent.cs</DependentUpon>
     </EmbeddedResource>

@@ -20,15 +20,15 @@ namespace StudentHousingBV
         private void btnUploadComplaint_Click(object sender, EventArgs e)
         {
             string newComplaint = txtBFillComplaint.Text.ToString();
-            if(rBAnonymous.Checked)
+            if(chBAnonymous.Checked)
             {
                 lbFillComplaints.Items.Add($"--> {newComplaint}");
                 lbViewComplaints.Items.Add($"--> {newComplaint}");
             }
-            else if(!rBAnonymous.Checked)
+            else if(!chBAnonymous.Checked)
             {
-                lbFillComplaints.Items.Add($"--> {newComplaint} - *Student name*");
-                lbViewComplaints.Items.Add($"--> {newComplaint} - *Student name*");
+                lbFillComplaints.Items.Add($"--> {newComplaint} - studentName");
+                lbViewComplaints.Items.Add($"--> {newComplaint} - studentName");
             }
         }
     }

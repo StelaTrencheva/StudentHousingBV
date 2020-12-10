@@ -31,12 +31,12 @@
             this.pnlComplaints = new System.Windows.Forms.Panel();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tbPFill = new System.Windows.Forms.TabPage();
-            this.tbPView = new System.Windows.Forms.TabPage();
-            this.lbFillComplaints = new System.Windows.Forms.ListBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtBFillComplaint = new System.Windows.Forms.TextBox();
-            this.rBAnonymous = new System.Windows.Forms.RadioButton();
+            this.chBAnonymous = new System.Windows.Forms.CheckBox();
             this.btnUploadComplaint = new System.Windows.Forms.Button();
+            this.txtBFillComplaint = new System.Windows.Forms.TextBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbFillComplaints = new System.Windows.Forms.ListBox();
+            this.tbPView = new System.Windows.Forms.TabPage();
             this.lbViewComplaints = new System.Windows.Forms.ListBox();
             this.pnlComplaints.SuspendLayout();
             this.tabControl1.SuspendLayout();
@@ -67,8 +67,8 @@
             // tbPFill
             // 
             this.tbPFill.BackColor = System.Drawing.Color.Lavender;
+            this.tbPFill.Controls.Add(this.chBAnonymous);
             this.tbPFill.Controls.Add(this.btnUploadComplaint);
-            this.tbPFill.Controls.Add(this.rBAnonymous);
             this.tbPFill.Controls.Add(this.txtBFillComplaint);
             this.tbPFill.Controls.Add(this.label1);
             this.tbPFill.Controls.Add(this.lbFillComplaints);
@@ -78,6 +78,54 @@
             this.tbPFill.Size = new System.Drawing.Size(708, 495);
             this.tbPFill.TabIndex = 0;
             this.tbPFill.Text = "Fill complaints";
+            // 
+            // chBAnonymous
+            // 
+            this.chBAnonymous.AutoSize = true;
+            this.chBAnonymous.Location = new System.Drawing.Point(23, 421);
+            this.chBAnonymous.Name = "chBAnonymous";
+            this.chBAnonymous.Size = new System.Drawing.Size(210, 33);
+            this.chBAnonymous.TabIndex = 5;
+            this.chBAnonymous.Text = "Stay anonymous";
+            this.chBAnonymous.UseVisualStyleBackColor = true;
+            // 
+            // btnUploadComplaint
+            // 
+            this.btnUploadComplaint.Location = new System.Drawing.Point(325, 414);
+            this.btnUploadComplaint.Name = "btnUploadComplaint";
+            this.btnUploadComplaint.Size = new System.Drawing.Size(353, 44);
+            this.btnUploadComplaint.TabIndex = 4;
+            this.btnUploadComplaint.Text = "Upload your complaint";
+            this.btnUploadComplaint.UseVisualStyleBackColor = true;
+            this.btnUploadComplaint.Click += new System.EventHandler(this.btnUploadComplaint_Click);
+            // 
+            // txtBFillComplaint
+            // 
+            this.txtBFillComplaint.Location = new System.Drawing.Point(23, 350);
+            this.txtBFillComplaint.Name = "txtBFillComplaint";
+            this.txtBFillComplaint.Size = new System.Drawing.Size(655, 34);
+            this.txtBFillComplaint.TabIndex = 2;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(18, 304);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(509, 29);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Do you have a complaint? Write it down below:";
+            // 
+            // lbFillComplaints
+            // 
+            this.lbFillComplaints.FormattingEnabled = true;
+            this.lbFillComplaints.ItemHeight = 29;
+            this.lbFillComplaints.Items.AddRange(new object[] {
+            "--> Loud noice - Alex Smith",
+            "--> Dirty dishes on the second floor"});
+            this.lbFillComplaints.Location = new System.Drawing.Point(23, 22);
+            this.lbFillComplaints.Name = "lbFillComplaints";
+            this.lbFillComplaints.Size = new System.Drawing.Size(655, 265);
+            this.lbFillComplaints.TabIndex = 0;
             // 
             // tbPView
             // 
@@ -90,56 +138,13 @@
             this.tbPView.TabIndex = 1;
             this.tbPView.Text = "View complaints";
             // 
-            // lbFillComplaints
-            // 
-            this.lbFillComplaints.FormattingEnabled = true;
-            this.lbFillComplaints.ItemHeight = 29;
-            this.lbFillComplaints.Location = new System.Drawing.Point(23, 22);
-            this.lbFillComplaints.Name = "lbFillComplaints";
-            this.lbFillComplaints.Size = new System.Drawing.Size(655, 265);
-            this.lbFillComplaints.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(18, 304);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(509, 29);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Do you have a complaint? Write it down below:";
-            // 
-            // txtBFillComplaint
-            // 
-            this.txtBFillComplaint.Location = new System.Drawing.Point(23, 350);
-            this.txtBFillComplaint.Name = "txtBFillComplaint";
-            this.txtBFillComplaint.Size = new System.Drawing.Size(655, 34);
-            this.txtBFillComplaint.TabIndex = 2;
-            // 
-            // rBAnonymous
-            // 
-            this.rBAnonymous.AutoSize = true;
-            this.rBAnonymous.Location = new System.Drawing.Point(23, 414);
-            this.rBAnonymous.Name = "rBAnonymous";
-            this.rBAnonymous.Size = new System.Drawing.Size(209, 33);
-            this.rBAnonymous.TabIndex = 3;
-            this.rBAnonymous.TabStop = true;
-            this.rBAnonymous.Text = "Stay anonymous";
-            this.rBAnonymous.UseVisualStyleBackColor = true;
-            // 
-            // btnUploadComplaint
-            // 
-            this.btnUploadComplaint.Location = new System.Drawing.Point(325, 414);
-            this.btnUploadComplaint.Name = "btnUploadComplaint";
-            this.btnUploadComplaint.Size = new System.Drawing.Size(353, 44);
-            this.btnUploadComplaint.TabIndex = 4;
-            this.btnUploadComplaint.Text = "Upload your complaint";
-            this.btnUploadComplaint.UseVisualStyleBackColor = true;
-            this.btnUploadComplaint.Click += new System.EventHandler(this.btnUploadComplaint_Click);
-            // 
             // lbViewComplaints
             // 
             this.lbViewComplaints.FormattingEnabled = true;
             this.lbViewComplaints.ItemHeight = 29;
+            this.lbViewComplaints.Items.AddRange(new object[] {
+            "--> Loud noice - Alex Smith",
+            "--> Dirty dishes on the second floor"});
             this.lbViewComplaints.Location = new System.Drawing.Point(18, 30);
             this.lbViewComplaints.Name = "lbViewComplaints";
             this.lbViewComplaints.Size = new System.Drawing.Size(672, 439);
@@ -168,10 +173,10 @@
         private System.Windows.Forms.TabPage tbPFill;
         private System.Windows.Forms.TabPage tbPView;
         private System.Windows.Forms.Button btnUploadComplaint;
-        private System.Windows.Forms.RadioButton rBAnonymous;
         private System.Windows.Forms.TextBox txtBFillComplaint;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.ListBox lbFillComplaints;
         private System.Windows.Forms.ListBox lbViewComplaints;
+        private System.Windows.Forms.CheckBox chBAnonymous;
     }
 }

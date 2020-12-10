@@ -36,6 +36,7 @@ namespace StudentHousingBV
                 profilePicture.Image = Properties.Resources.woman_avatar;
             }
             pnlHouseRulesEmployee.Visible = false;
+            pnlComplaintsEmployee1.Visible = false;
         }
 
         private FolderBrowserDialog d;
@@ -56,20 +57,34 @@ namespace StudentHousingBV
 
         private void btnHouseRulesEmp_Click(object sender, EventArgs e)
         {
+            btnHouseRulesEmp.BackColor = Color.LightSteelBlue;
+            btnMyAccountEmp.BackColor = Color.AliceBlue;
+            btnAnnouncementsEmp.BackColor = Color.AliceBlue;
+            btnCommonQuestionsEmp.BackColor = Color.AliceBlue;
+            btnComplaintsEmp.BackColor = Color.AliceBlue;
+            btnContactPageEmp.BackColor = Color.AliceBlue;
+            btnWalletEmp.BackColor = Color.AliceBlue;
+
             pnlHouseRulesEmployee.Visible = true;
             pnlHouseRulesEmployee.BringToFront();
             pnlEmployeeAccount.SendToBack();
-            btnHouseRulesEmp.BackColor = Color.LightSteelBlue;
-            btnMyAccountEmp.BackColor = Color.AliceBlue;
+            pnlComplaintsEmployee1.SendToBack();
 
         }
 
         private void btnMyAccountEmp_Click(object sender, EventArgs e)
         {
+             btnMyAccountEmp.BackColor = Color.LightSteelBlue;
+            btnHouseRulesEmp.BackColor = Color.AliceBlue;
+            btnAnnouncementsEmp.BackColor = Color.AliceBlue;
+            btnCommonQuestionsEmp.BackColor = Color.AliceBlue;
+            btnComplaintsEmp.BackColor = Color.AliceBlue;
+            btnContactPageEmp.BackColor = Color.AliceBlue;
+            btnWalletEmp.BackColor = Color.AliceBlue;
+
             pnlEmployeeAccount.BringToFront();
             pnlHouseRulesEmployee.Visible = false;
-            btnHouseRulesEmp.BackColor = Color.AliceBlue; 
-            btnMyAccountEmp.BackColor = Color.LightSteelBlue;
+            pnlComplaintsEmployee1.Visible = false;
         }
 
         private void profilePicture_Click(object sender, EventArgs e)
@@ -77,6 +92,67 @@ namespace StudentHousingBV
 
         }
 
+        
+
+        private void btnAnnouncementsEmp_Click(object sender, EventArgs e)
+        {
+             btnAnnouncementsEmp.BackColor = Color.LightSteelBlue;
+            btnHouseRulesEmp.BackColor = Color.AliceBlue;
+            btnMyAccountEmp.BackColor = Color.AliceBlue;
+            btnCommonQuestionsEmp.BackColor = Color.AliceBlue;
+            btnComplaintsEmp.BackColor = Color.AliceBlue;
+            btnContactPageEmp.BackColor = Color.AliceBlue;
+            btnWalletEmp.BackColor = Color.AliceBlue;
+        }
+
+        private void btnComplaintsEmp_Click(object sender, EventArgs e)
+        {
+             btnComplaintsEmp.BackColor = Color.LightSteelBlue;
+            btnHouseRulesEmp.BackColor = Color.AliceBlue;
+            btnMyAccountEmp.BackColor = Color.AliceBlue;
+            btnCommonQuestionsEmp.BackColor = Color.AliceBlue;
+            btnAnnouncementsEmp.BackColor = Color.AliceBlue;
+            btnContactPageEmp.BackColor = Color.AliceBlue;
+            btnWalletEmp.BackColor = Color.AliceBlue;
+
+            pnlComplaintsEmployee1.Visible = true;
+            pnlComplaintsEmployee1.BringToFront();
+            pnlEmployeeAccount.SendToBack();
+            pnlHouseRulesEmployee.SendToBack();
+        }
+
+        private void btnContactPageEmp_Click(object sender, EventArgs e)
+        {
+             btnContactPageEmp.BackColor = Color.LightSteelBlue;
+            btnHouseRulesEmp.BackColor = Color.AliceBlue;
+            btnMyAccountEmp.BackColor = Color.AliceBlue;
+            btnCommonQuestionsEmp.BackColor = Color.AliceBlue;
+            btnAnnouncementsEmp.BackColor = Color.AliceBlue;
+            btnComplaintsEmp.BackColor = Color.AliceBlue;
+            btnWalletEmp.BackColor = Color.AliceBlue;
+        }
+
+        private void btnCommonQuestionsEmp_Click(object sender, EventArgs e)
+        {
+             btnCommonQuestionsEmp.BackColor = Color.LightSteelBlue;
+            btnHouseRulesEmp.BackColor = Color.AliceBlue;
+            btnMyAccountEmp.BackColor = Color.AliceBlue;
+            btnContactPageEmp.BackColor = Color.AliceBlue;
+            btnAnnouncementsEmp.BackColor = Color.AliceBlue;
+            btnComplaintsEmp.BackColor = Color.AliceBlue;
+            btnWalletEmp.BackColor = Color.AliceBlue;
+        }
+
+        private void btnWalletEmp_Click(object sender, EventArgs e)
+        {
+             btnWalletEmp.BackColor = Color.LightSteelBlue;
+            btnHouseRulesEmp.BackColor = Color.AliceBlue;
+            btnMyAccountEmp.BackColor = Color.AliceBlue;
+            btnContactPageEmp.BackColor = Color.AliceBlue;
+            btnAnnouncementsEmp.BackColor = Color.AliceBlue;
+            btnComplaintsEmp.BackColor = Color.AliceBlue;
+            btnCommonQuestionsEmp.BackColor = Color.AliceBlue;
+        }
         private void btnLogOutEmp_Click(object sender, EventArgs e)
         {
             LogInPage login = new LogInPage();

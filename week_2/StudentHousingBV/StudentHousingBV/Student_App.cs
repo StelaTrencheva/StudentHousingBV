@@ -41,6 +41,7 @@ namespace StudentHousingBV
                 profilePicture.Image = Properties.Resources.man_avatar;
             }
             pnlHouseRules.Visible = false;
+            pnlcomplaintsStudent1.Visible = false;
         }
 
         private void btnMyAccount_Click(object sender, EventArgs e)
@@ -56,6 +57,7 @@ namespace StudentHousingBV
             pnlcomplaintsStudent1.SendToBack();
             pnlMyAccount.BringToFront();
             pnlHouseRules.Visible = false;
+            pnlcomplaintsStudent1.Visible = false;
 
         }
 
@@ -73,7 +75,6 @@ namespace StudentHousingBV
 
             pnlHouseRules.Visible = true;
             pnlHouseRules.BringToFront();
-            pnlMyAccount.SendToBack();
 
 
         }
@@ -98,10 +99,9 @@ namespace StudentHousingBV
 
         private void btnComplaints_Click(object sender, EventArgs e)
         {
+            pnlcomplaintsStudent1.Visible = true;
             pnlcomplaintsStudent1.BringToFront();
-            //pnlHouseRules.SendToBack();
-
-
+            
             btnComplaints.BackColor = Color.LightSteelBlue;
             btnHouseRules.BackColor = Color.AliceBlue;
             btnMyAccount.BackColor = Color.AliceBlue;
