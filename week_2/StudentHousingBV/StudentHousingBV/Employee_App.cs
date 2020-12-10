@@ -76,5 +76,12 @@ namespace StudentHousingBV
         {
 
         }
+
+        private void btnLogOutEmp_Click(object sender, EventArgs e)
+        {
+            LogInPage login = new LogInPage();
+            login.Show();
+            this.Hide();
+        }
     }
 }
