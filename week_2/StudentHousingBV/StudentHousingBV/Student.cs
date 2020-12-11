@@ -16,7 +16,7 @@ namespace StudentHousingBV
         private int StudentNumber;
         private int RoomNumber;
         private int BankAccount;
-        private int InitialBalance;
+        private double InitialBalance;
 
         public Student(
             string FirstName,
@@ -26,7 +26,7 @@ namespace StudentHousingBV
             int StudentNumber,
             int RoomNumber,
             int BankAccount,
-            int InitialBalance
+            double InitialBalance
             )
         {
             this.FirstName = FirstName;
@@ -68,9 +68,13 @@ namespace StudentHousingBV
         {
             return BankAccount;
         }
-        public int GetInitialBalance()
+        public double GetInitialBalance()
         {
             return InitialBalance;
+        }
+        public void SetBalance(double balance)
+        {
+            this.InitialBalance = balance;
         }
 
     }

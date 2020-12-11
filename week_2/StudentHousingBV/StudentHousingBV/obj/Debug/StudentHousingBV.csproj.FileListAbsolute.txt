@@ -46,3 +46,4 @@ C:\Fontys\SEM01-Advanced_phase\StudentHousingBV\StudentHousingBV\obj\Debug\Stude
 D:\stela\fontys\software_engineering_semester1\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.ComplaintsEmployee.resources
 D:\stela\fontys\software_engineering_semester1\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.ComplaintsStudent.resources
 C:\Users\Lenovo\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.ComplaintsEmployee.resources
+D:\stela\fontys\software_engineering_semester1\p-cb-s01-1-stelatrencheva-veronikavaleva\week_2\StudentHousingBV\StudentHousingBV\obj\Debug\StudentHousingBV.Wallet.resources

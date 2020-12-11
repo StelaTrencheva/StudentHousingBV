@@ -19,7 +19,7 @@ namespace StudentHousingBV
         List<int> StNumber = new List<int>() { 1256, 1408, 8967, 1583, 4506, 6964, 3158, 7543, 2486, 2990 };
         List<int> StRoomNumber = new List<int>() { 101, 102, 103, 104, 105, 201, 202, 203, 204, 205 };
         List<int> StBankAccount = new List<int>() { 38289, 12478, 16904, 45963, 75963, 60450, 35902, 75930, 15830, 65803 };
-        List<int> StInitialBalance = new List<int>() { 100, 110, 120, 130, 140, 150, 160, 170, 180, 190 };
+        List<double> StInitialBalance = new List<double>() { 100, 110, 120, 130, 140, 150, 160, 170, 180, 190 };
         Random random = new Random();
         string[] EmployeeFirstNames = new string[5] { "Cameron", "Ezra", "River", "Milan", "Bailey" };
         string[] EmployeeLastNames = new string[5] { "Sanhez", "Morris", "Moore", "Adams", "Anderson" };

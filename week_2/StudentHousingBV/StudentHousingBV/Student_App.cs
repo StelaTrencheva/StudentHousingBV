@@ -41,6 +41,7 @@ namespace StudentHousingBV
             }
             HideUserControls();
             complaintsStudent.SetStudent(student);
+            pnlWallet.SetStudent(student);
             timerTaskReminder.Enabled = true;
             timerTaskReminder.Start();
         }
@@ -68,8 +69,13 @@ namespace StudentHousingBV
         }
         private void btnWallet_Click(object sender, EventArgs e)
         {
+
+            pnlWallet.Show();
+            pnlWallet.BringToFront();
             ChangeAllColors();
             btnWallet.BackColor = Color.LightSteelBlue;
+            
+            
         }
 
 
@@ -115,6 +121,7 @@ namespace StudentHousingBV
         {
             pnlHouseRules.Visible = false;
             complaintsStudent.Visible = false;
+            pnlWallet.Visible = false;
         }
 
         private void btnMyAccount_Click(object sender, EventArgs e)
@@ -122,6 +129,7 @@ namespace StudentHousingBV
             HideUserControls();
             ChangeAllColors();
             btnMyAccount.BackColor = Color.LightSteelBlue;
+
             
         }
 
@@ -136,6 +144,11 @@ namespace StudentHousingBV
         private void timerTaskReminder_Tick(object sender, EventArgs e)
         {
             MessageBox.Show($"You still havent done your chores!");
+        }
+
+        private void complaintsStudent_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
