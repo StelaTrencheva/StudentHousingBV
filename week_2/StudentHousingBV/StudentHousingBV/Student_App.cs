@@ -42,6 +42,7 @@ namespace StudentHousingBV
             HideUserControls();
             complaintsStudent.SetStudent(student);
             pnlWallet.SetStudent(student);
+            contactPageStudents1.SetStudent(student);
             timerTaskReminder.Enabled = true;
             timerTaskReminder.Start();
         }
@@ -65,6 +66,8 @@ namespace StudentHousingBV
         {
             ChangeAllColors();
             btnContactPage.BackColor = Color.LightSteelBlue;
+            contactPageStudents1.Show();
+            contactPageStudents1.BringToFront();
 
         }
         private void btnWallet_Click(object sender, EventArgs e)
@@ -122,6 +125,7 @@ namespace StudentHousingBV
             pnlHouseRules.Visible = false;
             complaintsStudent.Visible = false;
             pnlWallet.Visible = false;
+            contactPageStudents1.Visible = false;
         }
 
         private void btnMyAccount_Click(object sender, EventArgs e)

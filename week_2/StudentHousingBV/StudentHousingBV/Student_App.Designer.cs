@@ -45,14 +45,15 @@
             this.btnChangeRoom = new System.Windows.Forms.Button();
             this.lblRoomNumber = new System.Windows.Forms.Label();
             this.pnlMyAccount = new System.Windows.Forms.Panel();
-            this.pnlWallet = new StudentHousingBV.Wallet();
-            this.complaintsStudent = new StudentHousingBV.ComplaintsStudent();
             this.lblBuilding = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.profilePicture = new System.Windows.Forms.PictureBox();
-            this.pnlHouseRules = new StudentHousingBV.HouseRules();
             this.panel1 = new System.Windows.Forms.Panel();
             this.timerTaskReminder = new System.Windows.Forms.Timer(this.components);
+            this.pnlWallet = new StudentHousingBV.Wallet();
+            this.complaintsStudent = new StudentHousingBV.ComplaintsStudent();
+            this.pnlHouseRules = new StudentHousingBV.HouseRules();
+            this.contactPageStudents1 = new StudentHousingBV.ContactPageStudents();
             this.pnlMyAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             this.panel1.SuspendLayout();
@@ -243,6 +244,7 @@
             // pnlMyAccount
             // 
             this.pnlMyAccount.BackColor = System.Drawing.Color.AliceBlue;
+            this.pnlMyAccount.Controls.Add(this.contactPageStudents1);
             this.pnlMyAccount.Controls.Add(this.pnlWallet);
             this.pnlMyAccount.Controls.Add(this.complaintsStudent);
             this.pnlMyAccount.Controls.Add(this.btnChangeRoom);
@@ -259,23 +261,6 @@
             this.pnlMyAccount.Name = "pnlMyAccount";
             this.pnlMyAccount.Size = new System.Drawing.Size(828, 650);
             this.pnlMyAccount.TabIndex = 3;
-            // 
-            // pnlWallet
-            // 
-            this.pnlWallet.BackColor = System.Drawing.Color.Lavender;
-            this.pnlWallet.Location = new System.Drawing.Point(13, 17);
-            this.pnlWallet.Name = "pnlWallet";
-            this.pnlWallet.Size = new System.Drawing.Size(783, 607);
-            this.pnlWallet.TabIndex = 22;
-            this.pnlWallet.Visible = false;
-            // 
-            // complaintsStudent
-            // 
-            this.complaintsStudent.Location = new System.Drawing.Point(0, 0);
-            this.complaintsStudent.Name = "complaintsStudent";
-            this.complaintsStudent.Size = new System.Drawing.Size(824, 650);
-            this.complaintsStudent.TabIndex = 21;
-            this.complaintsStudent.Load += new System.EventHandler(this.complaintsStudent_Load);
             // 
             // lblBuilding
             // 
@@ -307,13 +292,6 @@
             this.profilePicture.TabIndex = 0;
             this.profilePicture.TabStop = false;
             // 
-            // pnlHouseRules
-            // 
-            this.pnlHouseRules.Location = new System.Drawing.Point(1, 0);
-            this.pnlHouseRules.Name = "pnlHouseRules";
-            this.pnlHouseRules.Size = new System.Drawing.Size(824, 650);
-            this.pnlHouseRules.TabIndex = 20;
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Thistle;
@@ -335,6 +313,37 @@
             // 
             this.timerTaskReminder.Interval = 30000;
             this.timerTaskReminder.Tick += new System.EventHandler(this.timerTaskReminder_Tick);
+            // 
+            // pnlWallet
+            // 
+            this.pnlWallet.BackColor = System.Drawing.Color.Lavender;
+            this.pnlWallet.Location = new System.Drawing.Point(13, 17);
+            this.pnlWallet.Name = "pnlWallet";
+            this.pnlWallet.Size = new System.Drawing.Size(783, 607);
+            this.pnlWallet.TabIndex = 22;
+            this.pnlWallet.Visible = false;
+            // 
+            // complaintsStudent
+            // 
+            this.complaintsStudent.Location = new System.Drawing.Point(0, 0);
+            this.complaintsStudent.Name = "complaintsStudent";
+            this.complaintsStudent.Size = new System.Drawing.Size(824, 650);
+            this.complaintsStudent.TabIndex = 21;
+            this.complaintsStudent.Load += new System.EventHandler(this.complaintsStudent_Load);
+            // 
+            // pnlHouseRules
+            // 
+            this.pnlHouseRules.Location = new System.Drawing.Point(1, 0);
+            this.pnlHouseRules.Name = "pnlHouseRules";
+            this.pnlHouseRules.Size = new System.Drawing.Size(824, 650);
+            this.pnlHouseRules.TabIndex = 20;
+            // 
+            // contactPageStudents1
+            // 
+            this.contactPageStudents1.Location = new System.Drawing.Point(0, 0);
+            this.contactPageStudents1.Name = "contactPageStudents1";
+            this.contactPageStudents1.Size = new System.Drawing.Size(824, 650);
+            this.contactPageStudents1.TabIndex = 23;
             // 
             // Student_App
             // 
@@ -381,5 +390,6 @@
         private ComplaintsStudent complaintsStudent;
         private System.Windows.Forms.Timer timerTaskReminder;
         private Wallet pnlWallet;
+        private ContactPageStudents contactPageStudents1;
     }
 }

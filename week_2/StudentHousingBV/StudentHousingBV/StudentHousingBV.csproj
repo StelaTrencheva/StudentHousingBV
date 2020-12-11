@@ -58,6 +58,12 @@
     <Compile Include="ComplaintsStudent.Designer.cs">
       <DependentUpon>ComplaintsStudent.cs</DependentUpon>
     </Compile>
+    <Compile Include="ContactPageStudents.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ContactPageStudents.Designer.cs">
+      <DependentUpon>ContactPageStudents.cs</DependentUpon>
+    </Compile>
     <Compile Include="Employee.cs" />
     <Compile Include="Employee_App.cs">
       <SubType>Form</SubType>
@@ -103,6 +109,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="ComplaintsStudent.resx">
       <DependentUpon>ComplaintsStudent.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ContactPageStudents.resx">
+      <DependentUpon>ContactPageStudents.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee_App.resx">
       <DependentUpon>Employee_App.cs</DependentUpon>
