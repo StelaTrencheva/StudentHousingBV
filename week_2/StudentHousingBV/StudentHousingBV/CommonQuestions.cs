@@ -10,11 +10,11 @@ using System.Windows.Forms;
 
 namespace StudentHousingBV
 {
-    public partial class ContactPageStudents : UserControl
+    public partial class CommonQuestions : UserControl
     {
         public Student student;
         string[] QuestionAnswears;
-        public ContactPageStudents()
+        public CommonQuestions()
         {
             InitializeComponent();
         }

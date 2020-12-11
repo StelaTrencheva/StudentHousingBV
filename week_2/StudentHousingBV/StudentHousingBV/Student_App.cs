@@ -19,7 +19,7 @@ namespace StudentHousingBV
             InitializeComponent();
             this.student = student;
         }
-        
+
         private void Student_App_Load(object sender, EventArgs e)
         {
             pnlMyAccount.BringToFront();
@@ -42,12 +42,12 @@ namespace StudentHousingBV
             HideUserControls();
             complaintsStudent.SetStudent(student);
             pnlWallet.SetStudent(student);
-            contactPageStudents1.SetStudent(student);
+            pnlCommonQuestions.SetStudent(student);
             timerTaskReminder.Enabled = true;
             timerTaskReminder.Start();
         }
 
-       
+
         private void btnAnnouncements_Click(object sender, EventArgs e)
         {
 
@@ -61,13 +61,12 @@ namespace StudentHousingBV
 
         }
 
-       
+
         private void btnContactPage_Click(object sender, EventArgs e)
         {
             ChangeAllColors();
             btnContactPage.BackColor = Color.LightSteelBlue;
-            contactPageStudents1.Show();
-            contactPageStudents1.BringToFront();
+
 
         }
         private void btnWallet_Click(object sender, EventArgs e)
@@ -77,8 +76,7 @@ namespace StudentHousingBV
             pnlWallet.BringToFront();
             ChangeAllColors();
             btnWallet.BackColor = Color.LightSteelBlue;
-            
-            
+
         }
 
 
@@ -92,6 +90,8 @@ namespace StudentHousingBV
         {
             ChangeAllColors();
             btnCommonQuestions.BackColor = Color.LightSteelBlue;
+            pnlCommonQuestions.Show();
+            pnlCommonQuestions.BringToFront();
 
         }
         private void btnLogOut_Click(object sender, EventArgs e)
@@ -99,6 +99,7 @@ namespace StudentHousingBV
             LogInPage login = new LogInPage();
             login.Show();
             this.Hide();
+            timerTaskReminder.Stop();
         }
 
         private void btnHouseRules_Click(object sender, EventArgs e)
@@ -125,7 +126,7 @@ namespace StudentHousingBV
             pnlHouseRules.Visible = false;
             complaintsStudent.Visible = false;
             pnlWallet.Visible = false;
-            contactPageStudents1.Visible = false;
+            pnlCommonQuestions.Visible = false;
         }
 
         private void btnMyAccount_Click(object sender, EventArgs e)
@@ -134,7 +135,7 @@ namespace StudentHousingBV
             ChangeAllColors();
             btnMyAccount.BackColor = Color.LightSteelBlue;
 
-            
+
         }
 
         private void btnComplaints_Click(object sender, EventArgs e)

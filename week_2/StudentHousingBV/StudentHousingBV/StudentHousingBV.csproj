@@ -58,11 +58,11 @@
     <Compile Include="ComplaintsStudent.Designer.cs">
       <DependentUpon>ComplaintsStudent.cs</DependentUpon>
     </Compile>
-    <Compile Include="ContactPageStudents.cs">
+    <Compile Include="CommonQuestions.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="ContactPageStudents.Designer.cs">
-      <DependentUpon>ContactPageStudents.cs</DependentUpon>
+    <Compile Include="CommonQuestions.Designer.cs">
+      <DependentUpon>CommonQuestions.cs</DependentUpon>
     </Compile>
     <Compile Include="Employee.cs" />
     <Compile Include="Employee_App.cs">
@@ -110,8 +110,8 @@
     <EmbeddedResource Include="ComplaintsStudent.resx">
       <DependentUpon>ComplaintsStudent.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="ContactPageStudents.resx">
-      <DependentUpon>ContactPageStudents.cs</DependentUpon>
+    <EmbeddedResource Include="CommonQuestions.resx">
+      <DependentUpon>CommonQuestions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Employee_App.resx">
       <DependentUpon>Employee_App.cs</DependentUpon>
