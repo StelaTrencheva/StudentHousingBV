@@ -13,13 +13,15 @@ namespace StudentHousingBV
         private int EmployeeAge;
         private string EmployeeSex;
         private int EmployeeNumber;
-       
+        private string EmployeeEmail;
+
         public Employee(
             string FirstName,
             string LastName,
             int Age,
             string Sex,
-            int Number
+            int Number,
+            string email
             )
         {
             this.EmployeeFirstName = FirstName;
@@ -27,6 +29,7 @@ namespace StudentHousingBV
             this.EmployeeAge = Age;
             this.EmployeeSex = Sex;
             this.EmployeeNumber = Number;
+            this.EmployeeEmail = email;
         }
         public string GetEmployeeInfo()
         {

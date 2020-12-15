@@ -53,6 +53,7 @@
             this.pnlHouseRules = new StudentHousingBV.HouseRules();
             this.panel1 = new System.Windows.Forms.Panel();
             this.timerTaskReminder = new System.Windows.Forms.Timer(this.components);
+            this.pnlCommonQuestions = new StudentHousingBV.CommonQuestions();
             this.pnlMyAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             this.panel1.SuspendLayout();
@@ -243,6 +244,7 @@
             // pnlMyAccount
             // 
             this.pnlMyAccount.BackColor = System.Drawing.Color.AliceBlue;
+            this.pnlMyAccount.Controls.Add(this.pnlCommonQuestions);
             this.pnlMyAccount.Controls.Add(this.pnlWallet);
             this.pnlMyAccount.Controls.Add(this.complaintsStudent);
             this.pnlMyAccount.Controls.Add(this.btnChangeRoom);
@@ -336,6 +338,13 @@
             this.timerTaskReminder.Interval = 30000;
             this.timerTaskReminder.Tick += new System.EventHandler(this.timerTaskReminder_Tick);
             // 
+            // pnlCommonQuestions
+            // 
+            this.pnlCommonQuestions.Location = new System.Drawing.Point(1, 0);
+            this.pnlCommonQuestions.Name = "pnlCommonQuestions";
+            this.pnlCommonQuestions.Size = new System.Drawing.Size(824, 650);
+            this.pnlCommonQuestions.TabIndex = 23;
+            // 
             // Student_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -381,5 +390,6 @@
         private ComplaintsStudent complaintsStudent;
         private System.Windows.Forms.Timer timerTaskReminder;
         private Wallet pnlWallet;
+        private CommonQuestions pnlCommonQuestions;
     }
 }

@@ -25,6 +25,7 @@ namespace StudentHousingBV
         string[] EmployeeLastNames = new string[5] { "Sanhez", "Morris", "Moore", "Adams", "Anderson" };
         int[] employeeAge = new int[5] { 24, 28, 32, 36, 26 };
         int[] employeeNumber = new int[5] { 1, 2, 3, 4, 5 };
+        string[] employeeEmails = new string[5] { "cameron.sanchez@SHousingBV.nl", "ezra.morris.SHousingBV.nl", "river.moore@SHousingBV.nl", "milan.adams@SHousingBV.nl", "bailey.anderson@SHosuingBV.nl" };
 
         List<Employee> ListOfAllEmployees;
         List<Student> ListOfAllStudents;
@@ -82,7 +83,8 @@ namespace StudentHousingBV
                 EmployeeLastNames[index],
                 employeeAge[index],
                 sex,
-                employeeNumber[index]
+                employeeNumber[index],
+                employeeEmails[index]
                 );
         }
 
