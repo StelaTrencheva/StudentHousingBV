@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.pnlComplaints = new System.Windows.Forms.Panel();
-            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tbcComplaints = new System.Windows.Forms.TabControl();
             this.tbPFill = new System.Windows.Forms.TabPage();
             this.chBAnonymous = new System.Windows.Forms.CheckBox();
             this.btnUploadComplaint = new System.Windows.Forms.Button();
@@ -39,7 +39,7 @@
             this.tbPView = new System.Windows.Forms.TabPage();
             this.lbViewComplaints = new System.Windows.Forms.ListBox();
             this.pnlComplaints.SuspendLayout();
-            this.tabControl1.SuspendLayout();
+            this.tbcComplaints.SuspendLayout();
             this.tbPFill.SuspendLayout();
             this.tbPView.SuspendLayout();
             this.SuspendLayout();
@@ -47,22 +47,22 @@
             // pnlComplaints
             // 
             this.pnlComplaints.BackColor = System.Drawing.Color.Lavender;
-            this.pnlComplaints.Controls.Add(this.tabControl1);
+            this.pnlComplaints.Controls.Add(this.tbcComplaints);
             this.pnlComplaints.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.pnlComplaints.Location = new System.Drawing.Point(15, 21);
             this.pnlComplaints.Name = "pnlComplaints";
             this.pnlComplaints.Size = new System.Drawing.Size(783, 607);
             this.pnlComplaints.TabIndex = 0;
             // 
-            // tabControl1
+            // tbcComplaints
             // 
-            this.tabControl1.Controls.Add(this.tbPFill);
-            this.tabControl1.Controls.Add(this.tbPView);
-            this.tabControl1.Location = new System.Drawing.Point(32, 35);
-            this.tabControl1.Name = "tabControl1";
-            this.tabControl1.SelectedIndex = 0;
-            this.tabControl1.Size = new System.Drawing.Size(716, 537);
-            this.tabControl1.TabIndex = 0;
+            this.tbcComplaints.Controls.Add(this.tbPFill);
+            this.tbcComplaints.Controls.Add(this.tbPView);
+            this.tbcComplaints.Location = new System.Drawing.Point(32, 35);
+            this.tbcComplaints.Name = "tbcComplaints";
+            this.tbcComplaints.SelectedIndex = 0;
+            this.tbcComplaints.Size = new System.Drawing.Size(716, 537);
+            this.tbcComplaints.TabIndex = 0;
             // 
             // tbPFill
             // 
@@ -158,7 +158,7 @@
             this.Name = "ComplaintsStudent";
             this.Size = new System.Drawing.Size(824, 650);
             this.pnlComplaints.ResumeLayout(false);
-            this.tabControl1.ResumeLayout(false);
+            this.tbcComplaints.ResumeLayout(false);
             this.tbPFill.ResumeLayout(false);
             this.tbPFill.PerformLayout();
             this.tbPView.ResumeLayout(false);
@@ -169,7 +169,7 @@
         #endregion
 
         private System.Windows.Forms.Panel pnlComplaints;
-        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabControl tbcComplaints;
         private System.Windows.Forms.TabPage tbPFill;
         private System.Windows.Forms.TabPage tbPView;
         private System.Windows.Forms.Button btnUploadComplaint;

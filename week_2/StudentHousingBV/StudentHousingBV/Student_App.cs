@@ -20,6 +20,7 @@ namespace StudentHousingBV
             this.student = student;
         }
 
+
         private void Student_App_Load(object sender, EventArgs e)
         {
             pnlMyAccount.BringToFront();
@@ -43,6 +44,7 @@ namespace StudentHousingBV
             complaintsStudent.SetStudent(student);
             pnlWallet.SetStudent(student);
             pnlCommonQuestions.SetStudent(student);
+            tasks_student1.SetStudent(student);
             timerTaskReminder.Enabled = true;
             timerTaskReminder.Start();
         }
@@ -53,12 +55,6 @@ namespace StudentHousingBV
 
             ChangeAllColors();
             btnAnnouncements.BackColor = Color.LightSteelBlue;
-        }
-
-        private void btnChangeRoom_Click(object sender, EventArgs e)
-        {
-
-
         }
 
 
@@ -82,6 +78,8 @@ namespace StudentHousingBV
 
         private void btnMyTasks_Click(object sender, EventArgs e)
         {
+            tasks_student1.Show();
+            tasks_student1.BringToFront();
             ChangeAllColors();
             btnMyTasks.BackColor = Color.LightSteelBlue;
         }
@@ -127,6 +125,7 @@ namespace StudentHousingBV
             complaintsStudent.Visible = false;
             pnlWallet.Visible = false;
             pnlCommonQuestions.Visible = false;
+            tasks_student1.Visible = false;
         }
 
         private void btnMyAccount_Click(object sender, EventArgs e)
@@ -148,12 +147,11 @@ namespace StudentHousingBV
 
         private void timerTaskReminder_Tick(object sender, EventArgs e)
         {
-            MessageBox.Show($"You still havent done your chores!");
-        }
-
-        private void complaintsStudent_Load(object sender, EventArgs e)
-        {
-
+            if (tasks_student1.areThereUndoneTasks())
+            {
+                MessageBox.Show($"You still havent done your chores!");
+            }
+            
         }
     }
 }

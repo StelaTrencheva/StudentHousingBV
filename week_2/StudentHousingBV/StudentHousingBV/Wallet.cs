@@ -13,12 +13,15 @@ namespace StudentHousingBV
     public partial class Wallet : UserControl
     {
         public Student student;
-        public double currentBalance;
+        private double balance;
         
          public void SetStudent(Student student)
         {
-            this.student = student;
-            currentBalance = this.student.GetInitialBalance();
+            this.student = student; 
+        }
+        private double GetNewBalance()
+        {
+            return this.student.GetInitialBalance();
         }
         public Wallet()
         {
@@ -28,11 +31,12 @@ namespace StudentHousingBV
         
         private void btnDeposit_Click(object sender, EventArgs e)
         {
-            
+            balance = GetNewBalance();
             double amount = Convert.ToDouble(tbAmount.Text);
             string reason = tbReason.Text;
-            currentBalance += amount;
-            lblBalance.Text = (currentBalance).ToString();
+            balance += amount;
+            student.SetBalance(balance);
+            lblBalance.Text = (balance).ToString();
             lbxHistory.Items.Add($"Deposit {amount} Euro - {reason}");
             btnWithdraw.Enabled = true;
             ClearTextBoxes();
@@ -40,23 +44,26 @@ namespace StudentHousingBV
 
         private void btnWithdraw_Click(object sender, EventArgs e)
         {
-           
+            balance = GetNewBalance();
             double amount = Convert.ToDouble(tbAmount.Text);
             string reason = tbReason.Text;
-            if (currentBalance - amount <= 0)
+            if (balance - amount <= 0)
             {
                 MessageBox.Show("You do not have enough money in your balance!");
                 lbxHistory.Items.Add($"Failed withdraw for {amount} Euro - {reason}");
             }
             else
             {
-                currentBalance -= amount;
-                lblBalance.Text = (currentBalance).ToString();
+                balance -= amount;
+                lblBalance.Text = (balance).ToString();
+                student.SetBalance(balance);
                 lbxHistory.Items.Add($"Withdraw {amount} Euro - {reason}");
+                
             }
             ClearTextBoxes();
 
         }
+        
         private void ClearTextBoxes()
         {
             tbAmount.Text = "";
@@ -66,10 +73,17 @@ namespace StudentHousingBV
         {
             if (student == null)
                 return;
-
-            lblName.Text += $"{student.GetName()}";
+            lblBalance.Text += $"{student.GetInitialBalance()}";
             lblBankAccount.Text += $"{student.GetBankAccount()}";
-            lblBalance.Text = $"{currentBalance}";
+            lblName.Text += $"{student.GetName()}";
+            
+
+        }
+
+        private void btnUpdateBalance_Click(object sender, EventArgs e)
+        {
+            balance = GetNewBalance();
+            lblBalance.Text = balance.ToString();
         }
     }
 }

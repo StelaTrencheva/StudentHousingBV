@@ -105,11 +105,7 @@ namespace StudentHousingBV
             }
         }
         
-      
-
-        private void LogInPage_Load(object sender, EventArgs e)
-        {
-
-        }
+     
+       
     }
 }

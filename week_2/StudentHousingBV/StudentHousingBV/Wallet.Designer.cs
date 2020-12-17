@@ -42,6 +42,7 @@
             this.btnDeposit = new System.Windows.Forms.Button();
             this.btnWithdraw = new System.Windows.Forms.Button();
             this.lblBalance = new System.Windows.Forms.Label();
+            this.btnUpdateBalance = new System.Windows.Forms.Button();
             this.tbcWallet.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
@@ -205,11 +206,26 @@
             this.lblBalance.Size = new System.Drawing.Size(0, 34);
             this.lblBalance.TabIndex = 27;
             // 
+            // btnUpdateBalance
+            // 
+            this.btnUpdateBalance.BackColor = System.Drawing.Color.Lavender;
+            this.btnUpdateBalance.BackgroundImage = global::StudentHousingBV.Properties.Resources.update;
+            this.btnUpdateBalance.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.btnUpdateBalance.Font = new System.Drawing.Font("Roboto", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnUpdateBalance.Location = new System.Drawing.Point(32, 201);
+            this.btnUpdateBalance.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnUpdateBalance.Name = "btnUpdateBalance";
+            this.btnUpdateBalance.Size = new System.Drawing.Size(38, 34);
+            this.btnUpdateBalance.TabIndex = 19;
+            this.btnUpdateBalance.UseVisualStyleBackColor = false;
+            this.btnUpdateBalance.Click += new System.EventHandler(this.btnUpdateBalance_Click);
+            // 
             // Wallet
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Lavender;
+            this.Controls.Add(this.btnUpdateBalance);
             this.Controls.Add(this.lblBalance);
             this.Controls.Add(this.tbcWallet);
             this.Controls.Add(this.lblBankAccount);
@@ -243,5 +259,7 @@
         private System.Windows.Forms.Button btnDeposit;
         private System.Windows.Forms.Button btnWithdraw;
         private System.Windows.Forms.Label lblBalance;
+        private System.Windows.Forms.Timer timerUpdateBalance;
+        private System.Windows.Forms.Button btnUpdateBalance;
     }
 }
