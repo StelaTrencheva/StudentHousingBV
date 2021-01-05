@@ -155,12 +155,18 @@ namespace StudentHousingBV
         {
             if (pnl_tasks_student.areThereUndoneTasks())
             {
-                MessageBox.Show($"You still havent done your chores!");
+                MessageBox.Show($"You still haven't done your chores!");
             }
+            timerTaskReminder.Stop();
             
         }
 
         private void pnlAnnouncements_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnlAnnouncements_Load_1(object sender, EventArgs e)
         {
 
         }

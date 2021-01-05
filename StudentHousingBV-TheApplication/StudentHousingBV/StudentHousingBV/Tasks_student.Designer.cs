@@ -172,6 +172,7 @@
             this.lbxDoneTasks.Name = "lbxDoneTasks";
             this.lbxDoneTasks.Size = new System.Drawing.Size(672, 439);
             this.lbxDoneTasks.TabIndex = 0;
+            this.lbxDoneTasks.SelectedIndexChanged += new System.EventHandler(this.lbxDoneTasks_SelectedIndexChanged);
             // 
             // tbPPenalty
             // 

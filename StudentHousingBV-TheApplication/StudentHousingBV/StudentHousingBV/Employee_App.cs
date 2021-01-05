@@ -76,6 +76,7 @@ namespace StudentHousingBV
         {
             pnlHouseRulesEmployee.Visible = false;
             pnlComplaintsEmployee.Visible = false;
+            pnlAnnouncementsEmployee.Visible = false;
         }
         private void btnMyAccountEmp_Click(object sender, EventArgs e)
         {

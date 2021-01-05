@@ -51,12 +51,12 @@ namespace StudentHousingBV
             this.profilePicture = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.timerTaskReminder = new System.Windows.Forms.Timer(this.components);
+            this.pnlAnnouncements = new StudentHousingBV.Announcements();
             this.pnl_tasks_student = new StudentHousingBV.Tasks_student();
             this.pnlCommonQuestions = new StudentHousingBV.CommonQuestions();
             this.pnlWallet = new StudentHousingBV.Wallet();
             this.complaintsStudent = new StudentHousingBV.ComplaintsStudent();
             this.pnlHouseRules = new StudentHousingBV.HouseRules();
-            this.pnlAnnouncements = new StudentHousingBV.Announcements();
             this.pnlMyAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             this.panel1.SuspendLayout();
@@ -318,6 +318,14 @@ namespace StudentHousingBV
             this.timerTaskReminder.Interval = 60000;
             this.timerTaskReminder.Tick += new System.EventHandler(this.timerTaskReminder_Tick);
             // 
+            // pnlAnnouncements
+            // 
+            this.pnlAnnouncements.Location = new System.Drawing.Point(0, 0);
+            this.pnlAnnouncements.Name = "pnlAnnouncements";
+            this.pnlAnnouncements.Size = new System.Drawing.Size(824, 650);
+            this.pnlAnnouncements.TabIndex = 25;
+            this.pnlAnnouncements.Load += new System.EventHandler(this.pnlAnnouncements_Load_1);
+            // 
             // pnl_tasks_student
             // 
             this.pnl_tasks_student.Location = new System.Drawing.Point(0, 0);
@@ -354,13 +362,6 @@ namespace StudentHousingBV
             this.pnlHouseRules.Name = "pnlHouseRules";
             this.pnlHouseRules.Size = new System.Drawing.Size(824, 650);
             this.pnlHouseRules.TabIndex = 20;
-            // 
-            // pnlAnnouncements
-            // 
-            this.pnlAnnouncements.Location = new System.Drawing.Point(0, 0);
-            this.pnlAnnouncements.Name = "pnlAnnouncements";
-            this.pnlAnnouncements.Size = new System.Drawing.Size(824, 650);
-            this.pnlAnnouncements.TabIndex = 25;
             // 
             // Student_App
             // 

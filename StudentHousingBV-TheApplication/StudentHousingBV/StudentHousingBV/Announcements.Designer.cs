@@ -30,10 +30,16 @@ namespace StudentHousingBV
         private void InitializeComponent()
         {
             this.pnlAnnouncements = new System.Windows.Forms.Panel();
-            this.btnDeleteAnnouncement = new System.Windows.Forms.Button();
+            this.gbAddAnouncements = new System.Windows.Forms.GroupBox();
+            this.gbSubmitResults = new System.Windows.Forms.GroupBox();
+            this.lbTimeToSubmitResult = new System.Windows.Forms.Label();
+            this.rbNegative = new System.Windows.Forms.RadioButton();
+            this.rbPositive = new System.Windows.Forms.RadioButton();
+            this.btnSubmitResults = new System.Windows.Forms.Button();
+            this.lbResult = new System.Windows.Forms.Label();
             this.btnRestrictions = new System.Windows.Forms.Button();
+            this.btnDeleteAnnouncement = new System.Windows.Forms.Button();
             this.lbRestrictions = new System.Windows.Forms.ListBox();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.lbRoom = new System.Windows.Forms.Label();
             this.tbRoom = new System.Windows.Forms.TextBox();
             this.time = new System.Windows.Forms.DateTimePicker();
@@ -51,20 +57,22 @@ namespace StudentHousingBV
             this.tPFormalAnnouncements = new System.Windows.Forms.TabPage();
             this.lbFormalAnnouncements = new System.Windows.Forms.ListBox();
             this.tPCovidAnnouncements = new System.Windows.Forms.TabPage();
+            this.lbRequestTest = new System.Windows.Forms.Label();
+            this.lbPeopleWithCovid = new System.Windows.Forms.ListBox();
+            this.btnRequestTest = new System.Windows.Forms.Button();
             this.pnlAnnouncements.SuspendLayout();
-            this.groupBox1.SuspendLayout();
+            this.gbAddAnouncements.SuspendLayout();
+            this.gbSubmitResults.SuspendLayout();
             this.tbcAnnouncements.SuspendLayout();
             this.tPPartyAnnouncements.SuspendLayout();
             this.tPFormalAnnouncements.SuspendLayout();
+            this.tPCovidAnnouncements.SuspendLayout();
             this.SuspendLayout();
             // 
             // pnlAnnouncements
             // 
             this.pnlAnnouncements.BackColor = System.Drawing.Color.Lavender;
-            this.pnlAnnouncements.Controls.Add(this.btnDeleteAnnouncement);
-            this.pnlAnnouncements.Controls.Add(this.btnRestrictions);
-            this.pnlAnnouncements.Controls.Add(this.lbRestrictions);
-            this.pnlAnnouncements.Controls.Add(this.groupBox1);
+            this.pnlAnnouncements.Controls.Add(this.gbAddAnouncements);
             this.pnlAnnouncements.Controls.Add(this.tbcAnnouncements);
             this.pnlAnnouncements.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.pnlAnnouncements.Location = new System.Drawing.Point(21, 22);
@@ -72,23 +80,103 @@ namespace StudentHousingBV
             this.pnlAnnouncements.Size = new System.Drawing.Size(783, 607);
             this.pnlAnnouncements.TabIndex = 1;
             // 
-            // btnDeleteAnnouncement
+            // gbAddAnouncements
             // 
-            this.btnDeleteAnnouncement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.btnDeleteAnnouncement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnDeleteAnnouncement.Location = new System.Drawing.Point(545, 518);
-            this.btnDeleteAnnouncement.Name = "btnDeleteAnnouncement";
-            this.btnDeleteAnnouncement.Size = new System.Drawing.Size(199, 70);
-            this.btnDeleteAnnouncement.TabIndex = 12;
-            this.btnDeleteAnnouncement.Text = "Delete Announcement";
-            this.btnDeleteAnnouncement.UseVisualStyleBackColor = false;
-            this.btnDeleteAnnouncement.Click += new System.EventHandler(this.btnDeleteAnnouncement_Click);
+            this.gbAddAnouncements.Controls.Add(this.gbSubmitResults);
+            this.gbAddAnouncements.Controls.Add(this.btnRestrictions);
+            this.gbAddAnouncements.Controls.Add(this.btnDeleteAnnouncement);
+            this.gbAddAnouncements.Controls.Add(this.lbRestrictions);
+            this.gbAddAnouncements.Controls.Add(this.lbRoom);
+            this.gbAddAnouncements.Controls.Add(this.tbRoom);
+            this.gbAddAnouncements.Controls.Add(this.time);
+            this.gbAddAnouncements.Controls.Add(this.btnAddAnnouncement);
+            this.gbAddAnouncements.Controls.Add(this.date);
+            this.gbAddAnouncements.Controls.Add(this.tbAnnouncementTitle);
+            this.gbAddAnouncements.Controls.Add(this.lbDate);
+            this.gbAddAnouncements.Controls.Add(this.rbFormal);
+            this.gbAddAnouncements.Controls.Add(this.rbParty);
+            this.gbAddAnouncements.Controls.Add(this.lbTitle);
+            this.gbAddAnouncements.Controls.Add(this.lbType);
+            this.gbAddAnouncements.Location = new System.Drawing.Point(36, 349);
+            this.gbAddAnouncements.Name = "gbAddAnouncements";
+            this.gbAddAnouncements.Size = new System.Drawing.Size(708, 239);
+            this.gbAddAnouncements.TabIndex = 1;
+            this.gbAddAnouncements.TabStop = false;
+            this.gbAddAnouncements.Text = "Add your announcement";
+            // 
+            // gbSubmitResults
+            // 
+            this.gbSubmitResults.Controls.Add(this.lbTimeToSubmitResult);
+            this.gbSubmitResults.Controls.Add(this.rbNegative);
+            this.gbSubmitResults.Controls.Add(this.rbPositive);
+            this.gbSubmitResults.Controls.Add(this.btnSubmitResults);
+            this.gbSubmitResults.Controls.Add(this.lbResult);
+            this.gbSubmitResults.Location = new System.Drawing.Point(1, 0);
+            this.gbSubmitResults.Name = "gbSubmitResults";
+            this.gbSubmitResults.Size = new System.Drawing.Size(708, 239);
+            this.gbSubmitResults.TabIndex = 13;
+            this.gbSubmitResults.TabStop = false;
+            this.gbSubmitResults.Text = "Submit test results";
+            this.gbSubmitResults.Visible = false;
+            // 
+            // lbTimeToSubmitResult
+            // 
+            this.lbTimeToSubmitResult.AutoSize = true;
+            this.lbTimeToSubmitResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbTimeToSubmitResult.Location = new System.Drawing.Point(20, 169);
+            this.lbTimeToSubmitResult.Name = "lbTimeToSubmitResult";
+            this.lbTimeToSubmitResult.Size = new System.Drawing.Size(0, 29);
+            this.lbTimeToSubmitResult.TabIndex = 11;
+            // 
+            // rbNegative
+            // 
+            this.rbNegative.AutoSize = true;
+            this.rbNegative.Location = new System.Drawing.Point(381, 90);
+            this.rbNegative.Name = "rbNegative";
+            this.rbNegative.Size = new System.Drawing.Size(130, 33);
+            this.rbNegative.TabIndex = 10;
+            this.rbNegative.TabStop = true;
+            this.rbNegative.Text = "Negative";
+            this.rbNegative.UseVisualStyleBackColor = true;
+            // 
+            // rbPositive
+            // 
+            this.rbPositive.AutoSize = true;
+            this.rbPositive.Location = new System.Drawing.Point(164, 90);
+            this.rbPositive.Name = "rbPositive";
+            this.rbPositive.Size = new System.Drawing.Size(119, 33);
+            this.rbPositive.TabIndex = 9;
+            this.rbPositive.TabStop = true;
+            this.rbPositive.Text = "Positive";
+            this.rbPositive.UseVisualStyleBackColor = true;
+            // 
+            // btnSubmitResults
+            // 
+            this.btnSubmitResults.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnSubmitResults.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnSubmitResults.Location = new System.Drawing.Point(538, 158);
+            this.btnSubmitResults.Name = "btnSubmitResults";
+            this.btnSubmitResults.Size = new System.Drawing.Size(153, 53);
+            this.btnSubmitResults.TabIndex = 8;
+            this.btnSubmitResults.Text = "Submit";
+            this.btnSubmitResults.UseVisualStyleBackColor = false;
+            this.btnSubmitResults.Click += new System.EventHandler(this.btnSubmitResults_Click);
+            // 
+            // lbResult
+            // 
+            this.lbResult.AutoSize = true;
+            this.lbResult.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbResult.Location = new System.Drawing.Point(89, 45);
+            this.lbResult.Name = "lbResult";
+            this.lbResult.Size = new System.Drawing.Size(87, 29);
+            this.lbResult.TabIndex = 0;
+            this.lbResult.Text = "Result:";
             // 
             // btnRestrictions
             // 
             this.btnRestrictions.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnRestrictions.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnRestrictions.Location = new System.Drawing.Point(36, 518);
+            this.btnRestrictions.Location = new System.Drawing.Point(6, 171);
             this.btnRestrictions.Name = "btnRestrictions";
             this.btnRestrictions.Size = new System.Drawing.Size(158, 45);
             this.btnRestrictions.TabIndex = 9;
@@ -96,6 +184,18 @@ namespace StudentHousingBV
             this.btnRestrictions.UseVisualStyleBackColor = false;
             this.btnRestrictions.MouseLeave += new System.EventHandler(this.btnRestrictions_MouseLeave);
             this.btnRestrictions.MouseHover += new System.EventHandler(this.btnRestrictions_MouseHover);
+            // 
+            // btnDeleteAnnouncement
+            // 
+            this.btnDeleteAnnouncement.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(192)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
+            this.btnDeleteAnnouncement.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnDeleteAnnouncement.Location = new System.Drawing.Point(504, 158);
+            this.btnDeleteAnnouncement.Name = "btnDeleteAnnouncement";
+            this.btnDeleteAnnouncement.Size = new System.Drawing.Size(199, 70);
+            this.btnDeleteAnnouncement.TabIndex = 12;
+            this.btnDeleteAnnouncement.Text = "Delete Announcement";
+            this.btnDeleteAnnouncement.UseVisualStyleBackColor = false;
+            this.btnDeleteAnnouncement.Click += new System.EventHandler(this.btnDeleteAnnouncement_Click);
             // 
             // lbRestrictions
             // 
@@ -106,31 +206,11 @@ namespace StudentHousingBV
             "* Maximum allowed people in one room is 5",
             "* Wear your masks while being in a room with more people",
             "* Keep distance of 1.5m "});
-            this.lbRestrictions.Location = new System.Drawing.Point(200, 518);
+            this.lbRestrictions.Location = new System.Drawing.Point(165, 158);
             this.lbRestrictions.Name = "lbRestrictions";
             this.lbRestrictions.Size = new System.Drawing.Size(544, 70);
             this.lbRestrictions.TabIndex = 2;
             this.lbRestrictions.Visible = false;
-            // 
-            // groupBox1
-            // 
-            this.groupBox1.Controls.Add(this.lbRoom);
-            this.groupBox1.Controls.Add(this.tbRoom);
-            this.groupBox1.Controls.Add(this.time);
-            this.groupBox1.Controls.Add(this.btnAddAnnouncement);
-            this.groupBox1.Controls.Add(this.date);
-            this.groupBox1.Controls.Add(this.tbAnnouncementTitle);
-            this.groupBox1.Controls.Add(this.lbDate);
-            this.groupBox1.Controls.Add(this.rbFormal);
-            this.groupBox1.Controls.Add(this.rbParty);
-            this.groupBox1.Controls.Add(this.lbTitle);
-            this.groupBox1.Controls.Add(this.lbType);
-            this.groupBox1.Location = new System.Drawing.Point(36, 349);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(708, 152);
-            this.groupBox1.TabIndex = 1;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "Add your announcement";
             // 
             // lbRoom
             // 
@@ -300,15 +380,54 @@ namespace StudentHousingBV
             this.lbFormalAnnouncements.Location = new System.Drawing.Point(3, 36);
             this.lbFormalAnnouncements.Name = "lbFormalAnnouncements";
             this.lbFormalAnnouncements.Size = new System.Drawing.Size(730, 179);
-            this.lbFormalAnnouncements.TabIndex = 2;// 
+            this.lbFormalAnnouncements.TabIndex = 2;
+            // 
             // tPCovidAnnouncements
             // 
+            this.tPCovidAnnouncements.BackColor = System.Drawing.Color.Lavender;
+            this.tPCovidAnnouncements.Controls.Add(this.lbRequestTest);
+            this.tPCovidAnnouncements.Controls.Add(this.lbPeopleWithCovid);
+            this.tPCovidAnnouncements.Controls.Add(this.btnRequestTest);
             this.tPCovidAnnouncements.Location = new System.Drawing.Point(4, 38);
             this.tPCovidAnnouncements.Name = "tPCovidAnnouncements";
             this.tPCovidAnnouncements.Size = new System.Drawing.Size(740, 266);
             this.tPCovidAnnouncements.TabIndex = 2;
             this.tPCovidAnnouncements.Text = "COVID-19";
-            this.tPCovidAnnouncements.UseVisualStyleBackColor = true;
+            // 
+            // lbRequestTest
+            // 
+            this.lbRequestTest.AutoSize = true;
+            this.lbRequestTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbRequestTest.Location = new System.Drawing.Point(63, 209);
+            this.lbRequestTest.Name = "lbRequestTest";
+            this.lbRequestTest.Size = new System.Drawing.Size(335, 25);
+            this.lbRequestTest.TabIndex = 12;
+            this.lbRequestTest.Text = "You have symptoms? Request a test!";
+            // 
+            // lbPeopleWithCovid
+            // 
+            this.lbPeopleWithCovid.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lbPeopleWithCovid.FormattingEnabled = true;
+            this.lbPeopleWithCovid.HorizontalScrollbar = true;
+            this.lbPeopleWithCovid.ItemHeight = 25;
+            this.lbPeopleWithCovid.Items.AddRange(new object[] {
+            "--> Carter Johnson - Student - 13 days left of quarantine"});
+            this.lbPeopleWithCovid.Location = new System.Drawing.Point(14, 21);
+            this.lbPeopleWithCovid.Name = "lbPeopleWithCovid";
+            this.lbPeopleWithCovid.Size = new System.Drawing.Size(713, 154);
+            this.lbPeopleWithCovid.TabIndex = 10;
+            // 
+            // btnRequestTest
+            // 
+            this.btnRequestTest.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRequestTest.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnRequestTest.Location = new System.Drawing.Point(448, 190);
+            this.btnRequestTest.Name = "btnRequestTest";
+            this.btnRequestTest.Size = new System.Drawing.Size(225, 57);
+            this.btnRequestTest.TabIndex = 9;
+            this.btnRequestTest.Text = "Request a free test";
+            this.btnRequestTest.UseVisualStyleBackColor = false;
+            this.btnRequestTest.Click += new System.EventHandler(this.btnRequestTest_Click);
             // 
             // Announcements
             // 
@@ -318,11 +437,15 @@ namespace StudentHousingBV
             this.Name = "Announcements";
             this.Size = new System.Drawing.Size(824, 650);
             this.pnlAnnouncements.ResumeLayout(false);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.gbAddAnouncements.ResumeLayout(false);
+            this.gbAddAnouncements.PerformLayout();
+            this.gbSubmitResults.ResumeLayout(false);
+            this.gbSubmitResults.PerformLayout();
             this.tbcAnnouncements.ResumeLayout(false);
             this.tPPartyAnnouncements.ResumeLayout(false);
             this.tPFormalAnnouncements.ResumeLayout(false);
+            this.tPCovidAnnouncements.ResumeLayout(false);
+            this.tPCovidAnnouncements.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -335,7 +458,7 @@ namespace StudentHousingBV
         private System.Windows.Forms.TabPage tPFormalAnnouncements;
         private System.Windows.Forms.TabPage tPCovidAnnouncements;
         private System.Windows.Forms.ListBox lbPartyAnnouncements;
-        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.GroupBox gbAddAnouncements;
         private System.Windows.Forms.DateTimePicker date;
         private System.Windows.Forms.TextBox tbAnnouncementTitle;
         private System.Windows.Forms.Label lbDate;
@@ -351,5 +474,14 @@ namespace StudentHousingBV
         private System.Windows.Forms.Label lbRoom;
         private System.Windows.Forms.TextBox tbRoom;
         private System.Windows.Forms.Button btnDeleteAnnouncement;
+        private System.Windows.Forms.Label lbRequestTest;
+        private System.Windows.Forms.ListBox lbPeopleWithCovid;
+        private System.Windows.Forms.Button btnRequestTest;
+        private System.Windows.Forms.GroupBox gbSubmitResults;
+        private System.Windows.Forms.Button btnSubmitResults;
+        private System.Windows.Forms.Label lbResult;
+        private System.Windows.Forms.RadioButton rbNegative;
+        private System.Windows.Forms.RadioButton rbPositive;
+        private System.Windows.Forms.Label lbTimeToSubmitResult;
     }
 }

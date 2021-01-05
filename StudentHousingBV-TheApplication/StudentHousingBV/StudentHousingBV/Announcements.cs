@@ -15,6 +15,7 @@ namespace StudentHousingBV
         public Student student;
         public Employee employee;
         string name;
+        string position;
         enum Type
         {
             party,
@@ -41,10 +42,12 @@ namespace StudentHousingBV
             if (student == null)
             {
                 name = employee.GetName();
+                position = "Employee";
             }
             else if (employee == null)
             {
                 name = student.GetName();
+                position = "Student";
             }
         }
         private void btnRestrictions_MouseHover(object sender, EventArgs e)
@@ -152,18 +155,68 @@ namespace StudentHousingBV
            }
 
         }
+        
         private void tbcAnnouncements_SelectedIndexChanged(object sender, EventArgs e)
         {
             if (tbcAnnouncements.SelectedTab == tPPartyAnnouncements)
             {
                 lbFormalAnnouncements.ClearSelected();
-
-            }else if(tbcAnnouncements.SelectedTab == tPFormalAnnouncements)
+                gbAddAnouncements.Visible = true;
+                gbSubmitResults.Visible = false;
+            }
+            else if(tbcAnnouncements.SelectedTab == tPFormalAnnouncements)
             {
                 lbPartyAnnouncements.ClearSelected();
+                gbAddAnouncements.Visible = true;
+                gbSubmitResults.Visible = false;
             }
+            else
+            {
+                gbSubmitResults.Visible = true;
+            }
+           
+        }
+        bool isTestRequested = false; 
+        private void btnRequestTest_Click(object sender, EventArgs e)
+        {
+            isTestRequested = true;
         }
 
-       
+        private void btnSubmitResults_Click(object sender, EventArgs e)
+        {
+            CheckEmployeeOrStudent();
+            string result = $"--> {name} - {position} - 14 days left of quarantine";
+            if (rbPositive.Checked && isTestRequested==true)
+            {
+                if (lbPeopleWithCovid.Items.Contains(result))
+                {
+                    MessageBox.Show("You are already under quarantine!");
+                }
+                else
+                {
+                    lbPeopleWithCovid.Items.Add(result);
+                    MessageBox.Show("Get well soon! Please stay at home and do not meet anyone!");
+                }
+                isTestRequested = false;
+                
+            }
+            else if(rbNegative.Checked && isTestRequested == true)
+            {
+                if (lbPeopleWithCovid.Items.Contains(result))
+                {
+                    lbPeopleWithCovid.Items.Remove(result);
+                }
+                MessageBox.Show("We are happy that you are healthy!");
+                isTestRequested = false;
+                rbNegative.Checked = false;
+                rbPositive.Checked = false;
+
+            }
+            else
+            {
+                MessageBox.Show("Please request a test and choose a result!");
+            }
+        }
+     
     }
 }
