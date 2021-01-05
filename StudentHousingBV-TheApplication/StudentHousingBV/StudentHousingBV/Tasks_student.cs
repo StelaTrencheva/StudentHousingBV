@@ -209,8 +209,16 @@ namespace StudentHousingBV
                 MessageBox.Show("Please enter a valid amount!");
             }
             }
-            
-        
+
+        private void tbAmount_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void tbPUndone_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 
      

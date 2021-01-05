@@ -17,7 +17,6 @@ namespace StudentHousingBV
         private int RoomNumber;
         private int BankAccount;
         private double InitialBalance;
-        private double NewBalance;
 
         public Student(
             string FirstName,

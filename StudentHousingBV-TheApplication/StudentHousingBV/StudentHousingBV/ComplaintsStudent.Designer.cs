@@ -91,12 +91,13 @@
             // 
             // btnUploadComplaint
             // 
+            this.btnUploadComplaint.BackColor = System.Drawing.Color.LightSteelBlue;
             this.btnUploadComplaint.Location = new System.Drawing.Point(325, 414);
             this.btnUploadComplaint.Name = "btnUploadComplaint";
             this.btnUploadComplaint.Size = new System.Drawing.Size(353, 44);
             this.btnUploadComplaint.TabIndex = 4;
             this.btnUploadComplaint.Text = "Upload your complaint";
-            this.btnUploadComplaint.UseVisualStyleBackColor = true;
+            this.btnUploadComplaint.UseVisualStyleBackColor = false;
             this.btnUploadComplaint.Click += new System.EventHandler(this.btnUploadComplaint_Click);
             // 
             // txtBFillComplaint

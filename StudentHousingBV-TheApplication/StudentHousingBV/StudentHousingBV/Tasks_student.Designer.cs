@@ -94,6 +94,7 @@
             this.tbPUndone.Size = new System.Drawing.Size(708, 495);
             this.tbPUndone.TabIndex = 0;
             this.tbPUndone.Text = "Undone";
+            this.tbPUndone.Click += new System.EventHandler(this.tbPUndone_Click);
             // 
             // lbTimePenalty3
             // 
@@ -287,6 +288,7 @@
             this.tbAmount.Name = "tbAmount";
             this.tbAmount.Size = new System.Drawing.Size(160, 30);
             this.tbAmount.TabIndex = 12;
+            this.tbAmount.TextChanged += new System.EventHandler(this.tbAmount_TextChanged);
             // 
             // Tasks_student
             // 

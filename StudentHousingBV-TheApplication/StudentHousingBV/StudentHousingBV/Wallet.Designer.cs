@@ -259,7 +259,6 @@
         private System.Windows.Forms.Button btnDeposit;
         private System.Windows.Forms.Button btnWithdraw;
         private System.Windows.Forms.Label lblBalance;
-        private System.Windows.Forms.Timer timerUpdateBalance;
         private System.Windows.Forms.Button btnUpdateBalance;
     }
 }

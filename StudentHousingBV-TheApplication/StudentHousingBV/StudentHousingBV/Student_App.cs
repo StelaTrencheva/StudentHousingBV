@@ -41,18 +41,23 @@ namespace StudentHousingBV
                 profilePicture.Image = Properties.Resources.man_avatar;
             }
             HideUserControls();
-            complaintsStudent.SetStudent(student);
-            pnlWallet.SetStudent(student);
-            pnlCommonQuestions.SetStudent(student);
-            tasks_student1.SetStudent(student);
+            SetStudentToUserControls();
             timerTaskReminder.Enabled = true;
             timerTaskReminder.Start();
         }
 
-
+        private void SetStudentToUserControls()
+        {
+            complaintsStudent.SetStudent(student);
+            pnlAnnouncements.SetStudent(student);
+            pnlWallet.SetStudent(student);
+            pnlCommonQuestions.SetStudent(student);
+            pnl_tasks_student.SetStudent(student);
+        }
         private void btnAnnouncements_Click(object sender, EventArgs e)
         {
-
+            pnlAnnouncements.Show();
+            pnlAnnouncements.BringToFront();
             ChangeAllColors();
             btnAnnouncements.BackColor = Color.LightSteelBlue;
         }
@@ -78,8 +83,8 @@ namespace StudentHousingBV
 
         private void btnMyTasks_Click(object sender, EventArgs e)
         {
-            tasks_student1.Show();
-            tasks_student1.BringToFront();
+            pnl_tasks_student.Show();
+            pnl_tasks_student.BringToFront();
             ChangeAllColors();
             btnMyTasks.BackColor = Color.LightSteelBlue;
         }
@@ -125,7 +130,8 @@ namespace StudentHousingBV
             complaintsStudent.Visible = false;
             pnlWallet.Visible = false;
             pnlCommonQuestions.Visible = false;
-            tasks_student1.Visible = false;
+            pnl_tasks_student.Visible = false;
+            pnlAnnouncements.Visible = false;
         }
 
         private void btnMyAccount_Click(object sender, EventArgs e)
@@ -147,11 +153,16 @@ namespace StudentHousingBV
 
         private void timerTaskReminder_Tick(object sender, EventArgs e)
         {
-            if (tasks_student1.areThereUndoneTasks())
+            if (pnl_tasks_student.areThereUndoneTasks())
             {
                 MessageBox.Show($"You still havent done your chores!");
             }
             
+        }
+
+        private void pnlAnnouncements_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.panel1 = new System.Windows.Forms.Panel();
-            this.lBHouseRulesEmp = new System.Windows.Forms.ListBox();
-            this.lblHouserules = new System.Windows.Forms.Label();
-            this.txtBAddRule = new System.Windows.Forms.TextBox();
-            this.btnAddRule = new System.Windows.Forms.Button();
             this.btnRemoveRule = new System.Windows.Forms.Button();
+            this.btnAddRule = new System.Windows.Forms.Button();
+            this.txtBAddRule = new System.Windows.Forms.TextBox();
+            this.lblHouserules = new System.Windows.Forms.Label();
+            this.lBHouseRulesEmp = new System.Windows.Forms.ListBox();
             this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,6 +49,48 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(757, 584);
             this.panel1.TabIndex = 0;
+            // 
+            // btnRemoveRule
+            // 
+            this.btnRemoveRule.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnRemoveRule.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnRemoveRule.Location = new System.Drawing.Point(385, 485);
+            this.btnRemoveRule.Name = "btnRemoveRule";
+            this.btnRemoveRule.Size = new System.Drawing.Size(328, 40);
+            this.btnRemoveRule.TabIndex = 4;
+            this.btnRemoveRule.Text = "Remove selected rule";
+            this.btnRemoveRule.UseVisualStyleBackColor = false;
+            this.btnRemoveRule.Click += new System.EventHandler(this.btnRemoveRule_Click);
+            // 
+            // btnAddRule
+            // 
+            this.btnAddRule.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.btnAddRule.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.btnAddRule.Location = new System.Drawing.Point(44, 485);
+            this.btnAddRule.Name = "btnAddRule";
+            this.btnAddRule.Size = new System.Drawing.Size(328, 40);
+            this.btnAddRule.TabIndex = 3;
+            this.btnAddRule.Text = "Add rule";
+            this.btnAddRule.UseVisualStyleBackColor = false;
+            this.btnAddRule.Click += new System.EventHandler(this.btnAddRule_Click);
+            // 
+            // txtBAddRule
+            // 
+            this.txtBAddRule.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.txtBAddRule.Location = new System.Drawing.Point(46, 435);
+            this.txtBAddRule.Name = "txtBAddRule";
+            this.txtBAddRule.Size = new System.Drawing.Size(667, 30);
+            this.txtBAddRule.TabIndex = 2;
+            // 
+            // lblHouserules
+            // 
+            this.lblHouserules.AutoSize = true;
+            this.lblHouserules.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
+            this.lblHouserules.Location = new System.Drawing.Point(41, 43);
+            this.lblHouserules.Name = "lblHouserules";
+            this.lblHouserules.Size = new System.Drawing.Size(148, 29);
+            this.lblHouserules.TabIndex = 1;
+            this.lblHouserules.Text = "House rules:";
             // 
             // lBHouseRulesEmp
             // 
@@ -83,46 +125,7 @@
             this.lBHouseRulesEmp.Name = "lBHouseRulesEmp";
             this.lBHouseRulesEmp.Size = new System.Drawing.Size(669, 323);
             this.lBHouseRulesEmp.TabIndex = 0;
-            // 
-            // lblHouserules
-            // 
-            this.lblHouserules.AutoSize = true;
-            this.lblHouserules.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.lblHouserules.Location = new System.Drawing.Point(41, 43);
-            this.lblHouserules.Name = "lblHouserules";
-            this.lblHouserules.Size = new System.Drawing.Size(148, 29);
-            this.lblHouserules.TabIndex = 1;
-            this.lblHouserules.Text = "House rules:";
-            // 
-            // txtBAddRule
-            // 
-            this.txtBAddRule.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.txtBAddRule.Location = new System.Drawing.Point(46, 435);
-            this.txtBAddRule.Name = "txtBAddRule";
-            this.txtBAddRule.Size = new System.Drawing.Size(667, 30);
-            this.txtBAddRule.TabIndex = 2;
-            // 
-            // btnAddRule
-            // 
-            this.btnAddRule.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnAddRule.Location = new System.Drawing.Point(44, 485);
-            this.btnAddRule.Name = "btnAddRule";
-            this.btnAddRule.Size = new System.Drawing.Size(328, 40);
-            this.btnAddRule.TabIndex = 3;
-            this.btnAddRule.Text = "Add rule";
-            this.btnAddRule.UseVisualStyleBackColor = true;
-            this.btnAddRule.Click += new System.EventHandler(this.btnAddRule_Click);
-            // 
-            // btnRemoveRule
-            // 
-            this.btnRemoveRule.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnRemoveRule.Location = new System.Drawing.Point(385, 485);
-            this.btnRemoveRule.Name = "btnRemoveRule";
-            this.btnRemoveRule.Size = new System.Drawing.Size(328, 40);
-            this.btnRemoveRule.TabIndex = 4;
-            this.btnRemoveRule.Text = "Remove selected rule";
-            this.btnRemoveRule.UseVisualStyleBackColor = true;
-            this.btnRemoveRule.Click += new System.EventHandler(this.btnRemoveRule_Click);
+            this.lBHouseRulesEmp.SelectedIndexChanged += new System.EventHandler(this.lBHouseRulesEmp_SelectedIndexChanged);
             // 
             // HouseRulesEmployee
             // 

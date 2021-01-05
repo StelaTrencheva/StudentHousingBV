@@ -51,7 +51,8 @@ namespace StudentHousingBV
             this.profilePicture = new System.Windows.Forms.PictureBox();
             this.panel1 = new System.Windows.Forms.Panel();
             this.timerTaskReminder = new System.Windows.Forms.Timer(this.components);
-            this.tasks_student1 = new StudentHousingBV.Tasks_student();
+            this.pnlAnnouncements = new StudentHousingBV.Announcements();
+            this.pnl_tasks_student = new StudentHousingBV.Tasks_student();
             this.pnlCommonQuestions = new StudentHousingBV.CommonQuestions();
             this.pnlWallet = new StudentHousingBV.Wallet();
             this.complaintsStudent = new StudentHousingBV.ComplaintsStudent();
@@ -245,7 +246,8 @@ namespace StudentHousingBV
             // pnlMyAccount
             // 
             this.pnlMyAccount.BackColor = System.Drawing.Color.AliceBlue;
-            this.pnlMyAccount.Controls.Add(this.tasks_student1);
+            this.pnlMyAccount.Controls.Add(this.pnlAnnouncements);
+            this.pnlMyAccount.Controls.Add(this.pnl_tasks_student);
             this.pnlMyAccount.Controls.Add(this.pnlCommonQuestions);
             this.pnlMyAccount.Controls.Add(this.pnlWallet);
             this.pnlMyAccount.Controls.Add(this.complaintsStudent);
@@ -316,12 +318,20 @@ namespace StudentHousingBV
             this.timerTaskReminder.Interval = 60000;
             this.timerTaskReminder.Tick += new System.EventHandler(this.timerTaskReminder_Tick);
             // 
-            // tasks_student1
+            // pnlAnnouncements
             // 
-            this.tasks_student1.Location = new System.Drawing.Point(0, 0);
-            this.tasks_student1.Name = "tasks_student1";
-            this.tasks_student1.Size = new System.Drawing.Size(824, 650);
-            this.tasks_student1.TabIndex = 24;
+            this.pnlAnnouncements.Location = new System.Drawing.Point(1, 0);
+            this.pnlAnnouncements.Name = "pnlAnnouncements";
+            this.pnlAnnouncements.Size = new System.Drawing.Size(824, 650);
+            this.pnlAnnouncements.TabIndex = 25;
+            this.pnlAnnouncements.Load += new System.EventHandler(this.pnlAnnouncements_Load);
+            // 
+            // pnl_tasks_student
+            // 
+            this.pnl_tasks_student.Location = new System.Drawing.Point(0, 0);
+            this.pnl_tasks_student.Name = "pnl_tasks_student";
+            this.pnl_tasks_student.Size = new System.Drawing.Size(824, 650);
+            this.pnl_tasks_student.TabIndex = 24;
             // 
             // pnlCommonQuestions
             // 
@@ -399,6 +409,7 @@ namespace StudentHousingBV
         private System.Windows.Forms.Timer timerTaskReminder;
         private Wallet pnlWallet;
         private CommonQuestions pnlCommonQuestions;
-        private Tasks_student tasks_student1;
+        private Tasks_student pnl_tasks_student;
+        private Announcements pnlAnnouncements;
     }
 }

@@ -28,5 +28,10 @@ namespace StudentHousingBV
             int index = lBHouseRulesEmp.SelectedIndex;
             lBHouseRulesEmp.Items.RemoveAt(index);
         }
+
+        private void lBHouseRulesEmp_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
