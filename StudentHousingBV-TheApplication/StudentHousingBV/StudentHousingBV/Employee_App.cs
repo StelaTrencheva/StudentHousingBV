@@ -36,6 +36,7 @@ namespace StudentHousingBV
                 profilePicture.Image = Properties.Resources.woman_avatar;
             }
             HideUserControls();
+            pnlAnnouncementsEmployee.SetEmployee(employee);
         }
 
         private FolderBrowserDialog d;
@@ -86,6 +87,8 @@ namespace StudentHousingBV
         
         private void btnAnnouncementsEmp_Click(object sender, EventArgs e)
         {
+            pnlAnnouncementsEmployee.Visible = true;
+            pnlAnnouncementsEmployee.BringToFront();
             ChangeAllColors();
             btnAnnouncementsEmp.BackColor = Color.LightSteelBlue;
         }

@@ -277,7 +277,8 @@ namespace StudentHousingBV
             this.lbPartyAnnouncements.Location = new System.Drawing.Point(5, 39);
             this.lbPartyAnnouncements.Name = "lbPartyAnnouncements";
             this.lbPartyAnnouncements.Size = new System.Drawing.Size(730, 179);
-            this.lbPartyAnnouncements.TabIndex = 1; // 
+            this.lbPartyAnnouncements.TabIndex = 1;
+            // 
             // tPFormalAnnouncements
             // 
             this.tPFormalAnnouncements.BackColor = System.Drawing.Color.Lavender;
@@ -299,8 +300,7 @@ namespace StudentHousingBV
             this.lbFormalAnnouncements.Location = new System.Drawing.Point(3, 36);
             this.lbFormalAnnouncements.Name = "lbFormalAnnouncements";
             this.lbFormalAnnouncements.Size = new System.Drawing.Size(730, 179);
-            this.lbFormalAnnouncements.TabIndex = 2;
-            // 
+            this.lbFormalAnnouncements.TabIndex = 2;// 
             // tPCovidAnnouncements
             // 
             this.tPCovidAnnouncements.Location = new System.Drawing.Point(4, 38);

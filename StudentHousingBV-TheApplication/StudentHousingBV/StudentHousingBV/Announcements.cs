@@ -13,14 +13,39 @@ namespace StudentHousingBV
     public partial class Announcements : UserControl
     {
         public Student student;
+        public Employee employee;
+        string name;
+        enum Type
+        {
+            party,
+            formal,
+            none
+        }
         public Announcements()
         {
             InitializeComponent();
+            date.ResetText();
+            time.ResetText();
             tbcAnnouncements.SelectedIndexChanged += new EventHandler(tbcAnnouncements_SelectedIndexChanged);
+        }
+        public void SetEmployee(Employee employee)
+        {
+            this.employee = employee;
         }
         public void SetStudent(Student student)
         {
             this.student = student;
+        }
+        private void CheckEmployeeOrStudent()
+        {
+            if (student == null)
+            {
+                name = employee.GetName();
+            }
+            else if (employee == null)
+            {
+                name = student.GetName();
+            }
         }
         private void btnRestrictions_MouseHover(object sender, EventArgs e)
         {
@@ -31,20 +56,6 @@ namespace StudentHousingBV
         {
             lbRestrictions.Visible = false;
         }
-        private string CheckSelectedType()
-        {
-            if (rbFormal.Checked)
-            {
-                return "formal";
-            }else if(rbParty.Checked)
-            {
-                return "party";
-            }
-            else
-            {
-                return "none";
-            }
-        }
         private void ClearFields()
         {
             rbFormal.Checked = false;
@@ -53,63 +64,83 @@ namespace StudentHousingBV
             tbRoom.Text = "";
             date.ResetText();
             time.ResetText();
-            
+
         }
+        private Type CheckSelectedType()
+        {
+            if (rbFormal.Checked)
+            {
+                return Type.formal;
+            }
+            else if (rbParty.Checked)
+            {
+                return Type.party;
+            }
+            else return Type.none;
+        }
+      
         private void btnAddAnnouncement_Click(object sender, EventArgs e)
         {
-            string type = CheckSelectedType();
+            Type type = CheckSelectedType();
             string title = tbAnnouncementTitle.Text;
             string date = this.date.Value.ToString("dd-MM-yyyy");
             string time = this.time.Value.ToString("hh:mm");
             string room = tbRoom.Text;
-            string announcement = $"--> {title} - Date: {date} - Room: {room} - Time: {time} - {student.GetName()}";
-            if (type == "formal")
+            CheckEmployeeOrStudent();
+            string announcement = $"--> {title} - Date: {date} - Room: {room} - Time: {time} - {name}";
+            if (type == Type.formal)
             {
                 lbFormalAnnouncements.Items.Add(announcement);
             }
-            else if(type=="party")
+            else if(type==Type.party)
             {
                 lbPartyAnnouncements.Items.Add(announcement);
             }
+            else
+            {
+                MessageBox.Show("Please select type!");
+            }
             ClearFields();
         }
-        private string ListBoxOfSelectedItem()
+        private Type ListBoxOfSelectedItem()
         {
-            if (lbFormalAnnouncements.SelectedIndex == -1 && lbPartyAnnouncements.SelectedIndex>-1)
+            if (lbFormalAnnouncements.SelectedIndex == -1 && lbPartyAnnouncements.SelectedIndex > -1)
             {
-                return "party";
+                return Type.party;
             }
-            else if (lbPartyAnnouncements.SelectedIndex == -1 && lbFormalAnnouncements.SelectedIndex>-1)
+            else if (lbPartyAnnouncements.SelectedIndex == -1 && lbFormalAnnouncements.SelectedIndex > -1)
             {
-                return "formal";
-            }else 
-                return "none";
+                return Type.formal;
+            }
+            else
+                return Type.none;
            
         }
         private void btnDeleteAnnouncement_Click(object sender, EventArgs e)
         {
-            string name;
+            string authorName;
+            CheckEmployeeOrStudent();
             ListBox listBoxOfSelectedItem;
-            if (ListBoxOfSelectedItem()=="none")
+            if (ListBoxOfSelectedItem()==Type.none)
             {
                 MessageBox.Show("Please select an announcement!");
                 
             }
             else
             {
-                if (ListBoxOfSelectedItem()=="party")
+                if (ListBoxOfSelectedItem()==Type.party)
                 {
-                    name = lbPartyAnnouncements.SelectedItem.ToString().Split('-').Last();
+                    authorName = lbPartyAnnouncements.SelectedItem.ToString().Split('-').Last();
                     listBoxOfSelectedItem = lbPartyAnnouncements;
                 }
                 else
                 {
-                    name = lbFormalAnnouncements.SelectedItem.ToString().Split('-').Last();
+                    authorName = lbFormalAnnouncements.SelectedItem.ToString().Split('-').Last();
                     listBoxOfSelectedItem = lbFormalAnnouncements;
                 }
 
-                name = name.Remove(0, 1);
-                if (name == student.GetName())
+                authorName = authorName.Remove(0, 1);
+                if (authorName == name)
                 {
                     listBoxOfSelectedItem.Items.Remove(listBoxOfSelectedItem.SelectedItem);
                 }
@@ -132,5 +163,7 @@ namespace StudentHousingBV
                 lbPartyAnnouncements.ClearSelected();
             }
         }
+
+       
     }
 }
