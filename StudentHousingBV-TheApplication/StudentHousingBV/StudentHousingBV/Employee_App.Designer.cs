@@ -31,10 +31,16 @@
             this.lblEmployeeNumber = new System.Windows.Forms.Label();
             this.lblName = new System.Windows.Forms.Label();
             this.pnlEmployeeAccount = new System.Windows.Forms.Panel();
+            this.pnlCommonQuestionsEmployee = new StudentHousingBV.CommonQuestionsEmployee();
+            this.pnlAnnouncementsEmployee = new StudentHousingBV.Announcements();
             this.lblDownloadResult = new System.Windows.Forms.Label();
             this.btnDownloadContract = new System.Windows.Forms.Button();
+            this.contractPicture = new System.Windows.Forms.PictureBox();
             this.lblSex = new System.Windows.Forms.Label();
             this.lblAge = new System.Windows.Forms.Label();
+            this.profilePicture = new System.Windows.Forms.PictureBox();
+            this.pnlComplaintsEmployee = new StudentHousingBV.ComplaintsEmployee();
+            this.pnlHouseRulesEmployee = new StudentHousingBV.HouseRulesEmployee();
             this.btnMyAccountEmp = new System.Windows.Forms.Button();
             this.btnHouseRulesEmp = new System.Windows.Forms.Button();
             this.btnLogOutEmp = new System.Windows.Forms.Button();
@@ -44,15 +50,11 @@
             this.btnContactPageEmp = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCommonQuestionsEmp = new System.Windows.Forms.Button();
-            this.contractPicture = new System.Windows.Forms.PictureBox();
-            this.profilePicture = new System.Windows.Forms.PictureBox();
-            this.pnlComplaintsEmployee = new StudentHousingBV.ComplaintsEmployee();
-            this.pnlHouseRulesEmployee = new StudentHousingBV.HouseRulesEmployee();
-            this.pnlAnnouncementsEmployee = new StudentHousingBV.Announcements();
+            this.pnlmanageAccountsEmployee = new StudentHousingBV.ManageAccountsEmployee();
             this.pnlEmployeeAccount.SuspendLayout();
-            this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.contractPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblEmployeeNumber
@@ -78,6 +80,8 @@
             // pnlEmployeeAccount
             // 
             this.pnlEmployeeAccount.BackColor = System.Drawing.Color.AliceBlue;
+            this.pnlEmployeeAccount.Controls.Add(this.pnlmanageAccountsEmployee);
+            this.pnlEmployeeAccount.Controls.Add(this.pnlCommonQuestionsEmployee);
             this.pnlEmployeeAccount.Controls.Add(this.pnlAnnouncementsEmployee);
             this.pnlEmployeeAccount.Controls.Add(this.lblDownloadResult);
             this.pnlEmployeeAccount.Controls.Add(this.btnDownloadContract);
@@ -93,6 +97,21 @@
             this.pnlEmployeeAccount.Name = "pnlEmployeeAccount";
             this.pnlEmployeeAccount.Size = new System.Drawing.Size(828, 650);
             this.pnlEmployeeAccount.TabIndex = 5;
+            // 
+            // pnlCommonQuestionsEmployee
+            // 
+            this.pnlCommonQuestionsEmployee.BackColor = System.Drawing.Color.AliceBlue;
+            this.pnlCommonQuestionsEmployee.Location = new System.Drawing.Point(1, 0);
+            this.pnlCommonQuestionsEmployee.Name = "pnlCommonQuestionsEmployee";
+            this.pnlCommonQuestionsEmployee.Size = new System.Drawing.Size(824, 650);
+            this.pnlCommonQuestionsEmployee.TabIndex = 24;
+            // 
+            // pnlAnnouncementsEmployee
+            // 
+            this.pnlAnnouncementsEmployee.Location = new System.Drawing.Point(1, 0);
+            this.pnlAnnouncementsEmployee.Name = "pnlAnnouncementsEmployee";
+            this.pnlAnnouncementsEmployee.Size = new System.Drawing.Size(824, 650);
+            this.pnlAnnouncementsEmployee.TabIndex = 23;
             // 
             // lblDownloadResult
             // 
@@ -117,6 +136,16 @@
             this.btnDownloadContract.UseVisualStyleBackColor = false;
             this.btnDownloadContract.Click += new System.EventHandler(this.btnDownloadContract_Click);
             // 
+            // contractPicture
+            // 
+            this.contractPicture.Image = global::StudentHousingBV.Properties.Resources.ContractLaw;
+            this.contractPicture.Location = new System.Drawing.Point(394, 296);
+            this.contractPicture.Name = "contractPicture";
+            this.contractPicture.Size = new System.Drawing.Size(364, 233);
+            this.contractPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.contractPicture.TabIndex = 5;
+            this.contractPicture.TabStop = false;
+            // 
             // lblSex
             // 
             this.lblSex.AutoSize = true;
@@ -136,6 +165,30 @@
             this.lblAge.Size = new System.Drawing.Size(68, 29);
             this.lblAge.TabIndex = 2;
             this.lblAge.Text = "Age: ";
+            // 
+            // profilePicture
+            // 
+            this.profilePicture.Image = global::StudentHousingBV.Properties.Resources.woman_avatar;
+            this.profilePicture.Location = new System.Drawing.Point(51, 91);
+            this.profilePicture.Name = "profilePicture";
+            this.profilePicture.Size = new System.Drawing.Size(259, 272);
+            this.profilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.profilePicture.TabIndex = 0;
+            this.profilePicture.TabStop = false;
+            // 
+            // pnlComplaintsEmployee
+            // 
+            this.pnlComplaintsEmployee.Location = new System.Drawing.Point(-3, 0);
+            this.pnlComplaintsEmployee.Name = "pnlComplaintsEmployee";
+            this.pnlComplaintsEmployee.Size = new System.Drawing.Size(828, 650);
+            this.pnlComplaintsEmployee.TabIndex = 22;
+            // 
+            // pnlHouseRulesEmployee
+            // 
+            this.pnlHouseRulesEmployee.Location = new System.Drawing.Point(0, -3);
+            this.pnlHouseRulesEmployee.Name = "pnlHouseRulesEmployee";
+            this.pnlHouseRulesEmployee.Size = new System.Drawing.Size(828, 650);
+            this.pnlHouseRulesEmployee.TabIndex = 21;
             // 
             // btnMyAccountEmp
             // 
@@ -214,7 +267,7 @@
             this.btnManageAccountsEmp.TabIndex = 14;
             this.btnManageAccountsEmp.Text = "Manage Accounts";
             this.btnManageAccountsEmp.UseVisualStyleBackColor = false;
-            this.btnManageAccountsEmp.Click += new System.EventHandler(this.btnWalletEmp_Click);
+            this.btnManageAccountsEmp.Click += new System.EventHandler(this.btnManageAccountsEmp_Click_1);
             // 
             // btnContactPageEmp
             // 
@@ -258,46 +311,13 @@
             this.btnCommonQuestionsEmp.UseVisualStyleBackColor = false;
             this.btnCommonQuestionsEmp.Click += new System.EventHandler(this.btnCommonQuestionsEmp_Click);
             // 
-            // contractPicture
+            // pnlmanageAccountsEmployee
             // 
-            this.contractPicture.Image = global::StudentHousingBV.Properties.Resources.ContractLaw;
-            this.contractPicture.Location = new System.Drawing.Point(394, 296);
-            this.contractPicture.Name = "contractPicture";
-            this.contractPicture.Size = new System.Drawing.Size(364, 233);
-            this.contractPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.contractPicture.TabIndex = 5;
-            this.contractPicture.TabStop = false;
-            // 
-            // profilePicture
-            // 
-            this.profilePicture.Image = global::StudentHousingBV.Properties.Resources.woman_avatar;
-            this.profilePicture.Location = new System.Drawing.Point(51, 91);
-            this.profilePicture.Name = "profilePicture";
-            this.profilePicture.Size = new System.Drawing.Size(259, 272);
-            this.profilePicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.profilePicture.TabIndex = 0;
-            this.profilePicture.TabStop = false;
-            // 
-            // pnlComplaintsEmployee
-            // 
-            this.pnlComplaintsEmployee.Location = new System.Drawing.Point(-3, 0);
-            this.pnlComplaintsEmployee.Name = "pnlComplaintsEmployee";
-            this.pnlComplaintsEmployee.Size = new System.Drawing.Size(828, 650);
-            this.pnlComplaintsEmployee.TabIndex = 22;
-            // 
-            // pnlHouseRulesEmployee
-            // 
-            this.pnlHouseRulesEmployee.Location = new System.Drawing.Point(0, -3);
-            this.pnlHouseRulesEmployee.Name = "pnlHouseRulesEmployee";
-            this.pnlHouseRulesEmployee.Size = new System.Drawing.Size(828, 650);
-            this.pnlHouseRulesEmployee.TabIndex = 21;
-            // 
-            // pnlAnnouncementsEmployee
-            // 
-            this.pnlAnnouncementsEmployee.Location = new System.Drawing.Point(1, 0);
-            this.pnlAnnouncementsEmployee.Name = "pnlAnnouncementsEmployee";
-            this.pnlAnnouncementsEmployee.Size = new System.Drawing.Size(824, 650);
-            this.pnlAnnouncementsEmployee.TabIndex = 23;
+            this.pnlmanageAccountsEmployee.BackColor = System.Drawing.Color.AliceBlue;
+            this.pnlmanageAccountsEmployee.Location = new System.Drawing.Point(1, 0);
+            this.pnlmanageAccountsEmployee.Name = "pnlmanageAccountsEmployee";
+            this.pnlmanageAccountsEmployee.Size = new System.Drawing.Size(824, 650);
+            this.pnlmanageAccountsEmployee.TabIndex = 25;
             // 
             // Employee_App
             // 
@@ -311,9 +331,9 @@
             this.Load += new System.EventHandler(this.Employee_App_Load);
             this.pnlEmployeeAccount.ResumeLayout(false);
             this.pnlEmployeeAccount.PerformLayout();
-            this.panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.contractPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).EndInit();
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -340,5 +360,7 @@
         private HouseRulesEmployee pnlHouseRulesEmployee;
         private ComplaintsEmployee pnlComplaintsEmployee;
         private Announcements pnlAnnouncementsEmployee;
+        private CommonQuestionsEmployee pnlCommonQuestionsEmployee;
+        private ManageAccountsEmployee pnlmanageAccountsEmployee;
     }
 }

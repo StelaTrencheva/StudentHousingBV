@@ -14,11 +14,12 @@ namespace StudentHousingBV
     public partial class Employee_App : Form
     {
         private Employee employee;
-        public Employee_App(Employee employee)
+        public Employee_App(Employee employee, List<Student> listOfStudents)
         {
             InitializeComponent();
             this.employee = employee;
             pnlEmployeeAccount.BringToFront();
+            pnlmanageAccountsEmployee.SetListOfAllStudents(listOfStudents);
         }
 
         private void Employee_App_Load(object sender, EventArgs e)
@@ -77,6 +78,8 @@ namespace StudentHousingBV
             pnlHouseRulesEmployee.Visible = false;
             pnlComplaintsEmployee.Visible = false;
             pnlAnnouncementsEmployee.Visible = false;
+            pnlCommonQuestionsEmployee.Visible = false;
+            pnlmanageAccountsEmployee.Visible = false;
         }
         private void btnMyAccountEmp_Click(object sender, EventArgs e)
         {
@@ -110,20 +113,30 @@ namespace StudentHousingBV
 
         private void btnCommonQuestionsEmp_Click(object sender, EventArgs e)
         {
+            pnlCommonQuestionsEmployee.Visible = true;
+            pnlCommonQuestionsEmployee.BringToFront();
             ChangeAllColors();
             btnCommonQuestionsEmp.BackColor = Color.LightSteelBlue;
         }
 
-        private void btnWalletEmp_Click(object sender, EventArgs e)
-        {
-            ChangeAllColors();
-            btnManageAccountsEmp.BackColor = Color.LightSteelBlue;
-        }
         private void btnLogOutEmp_Click(object sender, EventArgs e)
         {
             LogInPage login = new LogInPage();
             login.Show();
             this.Hide();
+        }
+
+        private void commonQuestionsEmployee1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnManageAccountsEmp_Click_1(object sender, EventArgs e)
+        {
+            pnlmanageAccountsEmployee.Visible = true;
+            pnlmanageAccountsEmployee.BringToFront();
+            ChangeAllColors();
+            btnManageAccountsEmp.BackColor = Color.LightSteelBlue;
         }
     }
 }

@@ -43,6 +43,7 @@ namespace StudentHousingBV
         {
             return $"{FirstName} {LastName} - Student number: {StudentNumber} / Room: {RoomNumber}";
         }
+
         
         public string GetName()
         {

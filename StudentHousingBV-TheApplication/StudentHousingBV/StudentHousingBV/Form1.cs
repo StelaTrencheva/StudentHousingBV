@@ -99,10 +99,15 @@ namespace StudentHousingBV
             }
             else if (rBEmployee.Checked)
             {
-                Employee_App employee_app = new Employee_App(ListOfAllEmployees[SelectedIndex]);
+                Employee_App employee_app = new Employee_App(ListOfAllEmployees[SelectedIndex], ListOfAllStudents);
                 employee_app.Show();
                 this.Hide();
             }
+        }
+
+        public List<Student> GetListOfAllStudents()
+        {
+            return ListOfAllStudents;
         }
         
      

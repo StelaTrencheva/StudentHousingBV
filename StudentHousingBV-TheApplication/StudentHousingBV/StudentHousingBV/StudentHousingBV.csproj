@@ -53,6 +53,12 @@
     <Compile Include="Announcements.Designer.cs">
       <DependentUpon>Announcements.cs</DependentUpon>
     </Compile>
+    <Compile Include="CommonQuestionsEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="CommonQuestionsEmployee.Designer.cs">
+      <DependentUpon>CommonQuestionsEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="ComplaintsEmployee.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -96,6 +102,12 @@
     <Compile Include="HouseRulesEmployee.Designer.cs">
       <DependentUpon>HouseRulesEmployee.cs</DependentUpon>
     </Compile>
+    <Compile Include="ManageAccountsEmployee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ManageAccountsEmployee.Designer.cs">
+      <DependentUpon>ManageAccountsEmployee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Student.cs" />
@@ -120,6 +132,9 @@
     <EmbeddedResource Include="Announcements.resx">
       <DependentUpon>Announcements.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="CommonQuestionsEmployee.resx">
+      <DependentUpon>CommonQuestionsEmployee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ComplaintsEmployee.resx">
       <DependentUpon>ComplaintsEmployee.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="HouseRulesEmployee.resx">
       <DependentUpon>HouseRulesEmployee.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ManageAccountsEmployee.resx">
+      <DependentUpon>ManageAccountsEmployee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
