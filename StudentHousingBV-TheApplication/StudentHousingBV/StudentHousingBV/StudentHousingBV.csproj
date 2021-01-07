@@ -53,19 +53,17 @@
     <Compile Include="Announcements.Designer.cs">
       <DependentUpon>Announcements.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
     <Compile Include="CommonQuestionsEmployee.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="CommonQuestionsEmployee.Designer.cs">
       <DependentUpon>CommonQuestionsEmployee.cs</DependentUpon>
-=======
+	</Compile>
     <Compile Include="ChangeRoom.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="ChangeRoom.Designer.cs">
       <DependentUpon>ChangeRoom.cs</DependentUpon>
->>>>>>> weeek4_Stela_Trencheva
     </Compile>
     <Compile Include="ComplaintsEmployee.cs">
       <SubType>UserControl</SubType>
@@ -140,13 +138,11 @@
     <EmbeddedResource Include="Announcements.resx">
       <DependentUpon>Announcements.cs</DependentUpon>
     </EmbeddedResource>
-<<<<<<< HEAD
     <EmbeddedResource Include="CommonQuestionsEmployee.resx">
       <DependentUpon>CommonQuestionsEmployee.cs</DependentUpon>
-=======
+	</EmbeddedResource>
     <EmbeddedResource Include="ChangeRoom.resx">
       <DependentUpon>ChangeRoom.cs</DependentUpon>
->>>>>>> weeek4_Stela_Trencheva
     </EmbeddedResource>
     <EmbeddedResource Include="ComplaintsEmployee.resx">
       <DependentUpon>ComplaintsEmployee.cs</DependentUpon>
