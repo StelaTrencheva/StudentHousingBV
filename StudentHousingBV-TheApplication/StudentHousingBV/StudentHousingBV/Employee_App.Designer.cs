@@ -47,7 +47,6 @@
             this.btnAnnouncementsEmp = new System.Windows.Forms.Button();
             this.btnComplaintsEmp = new System.Windows.Forms.Button();
             this.btnManageAccountsEmp = new System.Windows.Forms.Button();
-            this.btnContactPageEmp = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.btnCommonQuestionsEmp = new System.Windows.Forms.Button();
             this.pnlmanageAccountsEmployee = new StudentHousingBV.ManageAccountsEmployee();
@@ -269,19 +268,6 @@
             this.btnManageAccountsEmp.UseVisualStyleBackColor = false;
             this.btnManageAccountsEmp.Click += new System.EventHandler(this.btnManageAccountsEmp_Click_1);
             // 
-            // btnContactPageEmp
-            // 
-            this.btnContactPageEmp.BackColor = System.Drawing.Color.AliceBlue;
-            this.btnContactPageEmp.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnContactPageEmp.Location = new System.Drawing.Point(9, 226);
-            this.btnContactPageEmp.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnContactPageEmp.Name = "btnContactPageEmp";
-            this.btnContactPageEmp.Size = new System.Drawing.Size(237, 52);
-            this.btnContactPageEmp.TabIndex = 12;
-            this.btnContactPageEmp.Text = "Contact Page";
-            this.btnContactPageEmp.UseVisualStyleBackColor = false;
-            this.btnContactPageEmp.Click += new System.EventHandler(this.btnContactPageEmp_Click);
-            // 
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.Thistle;
@@ -291,7 +277,6 @@
             this.panel1.Controls.Add(this.btnAnnouncementsEmp);
             this.panel1.Controls.Add(this.btnComplaintsEmp);
             this.panel1.Controls.Add(this.btnManageAccountsEmp);
-            this.panel1.Controls.Add(this.btnContactPageEmp);
             this.panel1.Controls.Add(this.btnMyAccountEmp);
             this.panel1.Location = new System.Drawing.Point(-3, 3);
             this.panel1.Name = "panel1";
@@ -351,7 +336,6 @@
         private System.Windows.Forms.Button btnAnnouncementsEmp;
         private System.Windows.Forms.Button btnComplaintsEmp;
         private System.Windows.Forms.Button btnManageAccountsEmp;
-        private System.Windows.Forms.Button btnContactPageEmp;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Button btnCommonQuestionsEmp;
         private System.Windows.Forms.PictureBox contractPicture;

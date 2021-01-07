@@ -77,6 +77,10 @@ namespace StudentHousingBV
         {
             this.InitialBalance = balance;
         }
+        public void SetRoomNumber(int roomNumber)
+        {
+            this.RoomNumber = roomNumber;
+        }
 
     }
 }

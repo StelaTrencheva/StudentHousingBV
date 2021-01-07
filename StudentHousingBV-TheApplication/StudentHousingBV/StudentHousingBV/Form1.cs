@@ -30,6 +30,7 @@ namespace StudentHousingBV
         List<Employee> ListOfAllEmployees;
         List<Student> ListOfAllStudents;
         int SelectedIndex;
+
         public LogInPage()
         {
             InitializeComponent();

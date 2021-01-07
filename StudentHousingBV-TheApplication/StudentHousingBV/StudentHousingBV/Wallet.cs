@@ -85,5 +85,10 @@ namespace StudentHousingBV
             balance = GetNewBalance();
             lblBalance.Text = balance.ToString();
         }
+
+        private void labelbalance_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

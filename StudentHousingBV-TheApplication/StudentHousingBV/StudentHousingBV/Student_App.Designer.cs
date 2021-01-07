@@ -37,7 +37,6 @@ namespace StudentHousingBV
             this.btnMyTasks = new System.Windows.Forms.Button();
             this.btnComplaints = new System.Windows.Forms.Button();
             this.btnWallet = new System.Windows.Forms.Button();
-            this.btnContactPage = new System.Windows.Forms.Button();
             this.lblUniversity = new System.Windows.Forms.Label();
             this.lblStudentNumber = new System.Windows.Forms.Label();
             this.lblSex = new System.Windows.Forms.Label();
@@ -57,6 +56,7 @@ namespace StudentHousingBV
             this.pnlWallet = new StudentHousingBV.Wallet();
             this.complaintsStudent = new StudentHousingBV.ComplaintsStudent();
             this.pnlHouseRules = new StudentHousingBV.HouseRules();
+            this.pnlChangeRoom = new StudentHousingBV.ChangeRoom();
             this.pnlMyAccount.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.profilePicture)).BeginInit();
             this.panel1.SuspendLayout();
@@ -154,19 +154,6 @@ namespace StudentHousingBV
             this.btnWallet.UseVisualStyleBackColor = false;
             this.btnWallet.Click += new System.EventHandler(this.btnWallet_Click);
             // 
-            // btnContactPage
-            // 
-            this.btnContactPage.BackColor = System.Drawing.Color.AliceBlue;
-            this.btnContactPage.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.btnContactPage.Location = new System.Drawing.Point(9, 226);
-            this.btnContactPage.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnContactPage.Name = "btnContactPage";
-            this.btnContactPage.Size = new System.Drawing.Size(237, 52);
-            this.btnContactPage.TabIndex = 12;
-            this.btnContactPage.Text = "Contact Page";
-            this.btnContactPage.UseVisualStyleBackColor = false;
-            this.btnContactPage.Click += new System.EventHandler(this.btnContactPage_Click);
-            // 
             // lblUniversity
             // 
             this.lblUniversity.AutoSize = true;
@@ -232,6 +219,7 @@ namespace StudentHousingBV
             this.btnChangeRoom.TabIndex = 18;
             this.btnChangeRoom.Text = "Change room";
             this.btnChangeRoom.UseVisualStyleBackColor = false;
+            this.btnChangeRoom.Click += new System.EventHandler(this.btnChangeRoom_Click);
             // 
             // lblRoomNumber
             // 
@@ -246,11 +234,6 @@ namespace StudentHousingBV
             // pnlMyAccount
             // 
             this.pnlMyAccount.BackColor = System.Drawing.Color.AliceBlue;
-            this.pnlMyAccount.Controls.Add(this.pnlAnnouncements);
-            this.pnlMyAccount.Controls.Add(this.pnl_tasks_student);
-            this.pnlMyAccount.Controls.Add(this.pnlCommonQuestions);
-            this.pnlMyAccount.Controls.Add(this.pnlWallet);
-            this.pnlMyAccount.Controls.Add(this.complaintsStudent);
             this.pnlMyAccount.Controls.Add(this.btnChangeRoom);
             this.pnlMyAccount.Controls.Add(this.lblRoomNumber);
             this.pnlMyAccount.Controls.Add(this.lblBuilding);
@@ -260,7 +243,13 @@ namespace StudentHousingBV
             this.pnlMyAccount.Controls.Add(this.lblAge);
             this.pnlMyAccount.Controls.Add(this.lblName);
             this.pnlMyAccount.Controls.Add(this.profilePicture);
+            this.pnlMyAccount.Controls.Add(this.pnlAnnouncements);
+            this.pnlMyAccount.Controls.Add(this.pnl_tasks_student);
+            this.pnlMyAccount.Controls.Add(this.pnlCommonQuestions);
+            this.pnlMyAccount.Controls.Add(this.pnlWallet);
+            this.pnlMyAccount.Controls.Add(this.complaintsStudent);
             this.pnlMyAccount.Controls.Add(this.pnlHouseRules);
+            this.pnlMyAccount.Controls.Add(this.pnlChangeRoom);
             this.pnlMyAccount.Location = new System.Drawing.Point(257, 1);
             this.pnlMyAccount.Name = "pnlMyAccount";
             this.pnlMyAccount.Size = new System.Drawing.Size(828, 650);
@@ -306,7 +295,6 @@ namespace StudentHousingBV
             this.panel1.Controls.Add(this.btnMyTasks);
             this.panel1.Controls.Add(this.btnComplaints);
             this.panel1.Controls.Add(this.btnWallet);
-            this.panel1.Controls.Add(this.btnContactPage);
             this.panel1.Controls.Add(this.btnMyAccount);
             this.panel1.Location = new System.Drawing.Point(-3, 1);
             this.panel1.Name = "panel1";
@@ -324,7 +312,6 @@ namespace StudentHousingBV
             this.pnlAnnouncements.Name = "pnlAnnouncements";
             this.pnlAnnouncements.Size = new System.Drawing.Size(824, 650);
             this.pnlAnnouncements.TabIndex = 25;
-            this.pnlAnnouncements.Load += new System.EventHandler(this.pnlAnnouncements_Load_1);
             // 
             // pnl_tasks_student
             // 
@@ -363,13 +350,20 @@ namespace StudentHousingBV
             this.pnlHouseRules.Size = new System.Drawing.Size(824, 650);
             this.pnlHouseRules.TabIndex = 20;
             // 
+            // pnlChangeRoom
+            // 
+            this.pnlChangeRoom.Location = new System.Drawing.Point(4, 0);
+            this.pnlChangeRoom.Name = "pnlChangeRoom";
+            this.pnlChangeRoom.Size = new System.Drawing.Size(824, 650);
+            this.pnlChangeRoom.TabIndex = 26;
+            // 
             // Student_App
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1082, 653);
-            this.Controls.Add(this.pnlMyAccount);
             this.Controls.Add(this.panel1);
+            this.Controls.Add(this.pnlMyAccount);
             this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Student_App";
             this.Text = "Student Housing BV";
@@ -392,7 +386,6 @@ namespace StudentHousingBV
         private System.Windows.Forms.Button btnMyTasks;
         private System.Windows.Forms.Button btnComplaints;
         private System.Windows.Forms.Button btnWallet;
-        private System.Windows.Forms.Button btnContactPage;
         private System.Windows.Forms.Label lblUniversity;
         private System.Windows.Forms.Label lblStudentNumber;
         private System.Windows.Forms.Label lblSex;
@@ -411,5 +404,6 @@ namespace StudentHousingBV
         private CommonQuestions pnlCommonQuestions;
         private Tasks_student pnl_tasks_student;
         private Announcements pnlAnnouncements;
+        private ChangeRoom pnlChangeRoom;
     }
 }

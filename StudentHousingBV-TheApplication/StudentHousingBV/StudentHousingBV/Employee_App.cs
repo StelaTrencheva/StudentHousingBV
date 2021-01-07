@@ -68,7 +68,6 @@ namespace StudentHousingBV
             btnHouseRulesEmp.BackColor = Color.AliceBlue;
             btnAnnouncementsEmp.BackColor = Color.AliceBlue;
             btnComplaintsEmp.BackColor = Color.AliceBlue;
-            btnContactPageEmp.BackColor = Color.AliceBlue;
             btnMyAccountEmp.BackColor = Color.AliceBlue;
             btnManageAccountsEmp.BackColor = Color.AliceBlue;
         }
@@ -105,11 +104,7 @@ namespace StudentHousingBV
             btnComplaintsEmp.BackColor = Color.LightSteelBlue;
         }
 
-        private void btnContactPageEmp_Click(object sender, EventArgs e)
-        {
-            ChangeAllColors();
-            btnContactPageEmp.BackColor = Color.LightSteelBlue;
-        }
+       
 
         private void btnCommonQuestionsEmp_Click(object sender, EventArgs e)
         {
