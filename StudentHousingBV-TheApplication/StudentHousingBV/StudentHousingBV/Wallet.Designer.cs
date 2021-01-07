@@ -69,6 +69,7 @@
             this.labelbalance.Size = new System.Drawing.Size(115, 34);
             this.labelbalance.TabIndex = 23;
             this.labelbalance.Text = "Balance: ";
+            this.labelbalance.Click += new System.EventHandler(this.labelbalance_Click);
             // 
             // lblName
             // 

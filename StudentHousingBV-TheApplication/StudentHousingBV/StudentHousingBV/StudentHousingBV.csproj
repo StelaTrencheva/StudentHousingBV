@@ -53,6 +53,12 @@
     <Compile Include="Announcements.Designer.cs">
       <DependentUpon>Announcements.cs</DependentUpon>
     </Compile>
+    <Compile Include="ChangeRoom.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ChangeRoom.Designer.cs">
+      <DependentUpon>ChangeRoom.cs</DependentUpon>
+    </Compile>
     <Compile Include="ComplaintsEmployee.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </Compile>
     <EmbeddedResource Include="Announcements.resx">
       <DependentUpon>Announcements.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ChangeRoom.resx">
+      <DependentUpon>ChangeRoom.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ComplaintsEmployee.resx">
       <DependentUpon>ComplaintsEmployee.cs</DependentUpon>

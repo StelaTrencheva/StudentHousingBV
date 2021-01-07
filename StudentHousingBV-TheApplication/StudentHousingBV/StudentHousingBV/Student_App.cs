@@ -53,6 +53,7 @@ namespace StudentHousingBV
             pnlWallet.SetStudent(student);
             pnlCommonQuestions.SetStudent(student);
             pnl_tasks_student.SetStudent(student);
+            pnlChangeRoom.SetStudent(student);
         }
         private void btnAnnouncements_Click(object sender, EventArgs e)
         {
@@ -63,13 +64,6 @@ namespace StudentHousingBV
         }
 
 
-        private void btnContactPage_Click(object sender, EventArgs e)
-        {
-            ChangeAllColors();
-            btnContactPage.BackColor = Color.LightSteelBlue;
-
-
-        }
         private void btnWallet_Click(object sender, EventArgs e)
         {
 
@@ -118,7 +112,6 @@ namespace StudentHousingBV
             btnHouseRules.BackColor = Color.AliceBlue;
             btnAnnouncements.BackColor = Color.AliceBlue;
             btnComplaints.BackColor = Color.AliceBlue;
-            btnContactPage.BackColor = Color.AliceBlue;
             btnMyAccount.BackColor = Color.AliceBlue;
             btnWallet.BackColor = Color.AliceBlue;
             btnMyTasks.BackColor = Color.AliceBlue;
@@ -132,13 +125,16 @@ namespace StudentHousingBV
             pnlCommonQuestions.Visible = false;
             pnl_tasks_student.Visible = false;
             pnlAnnouncements.Visible = false;
+            pnlChangeRoom.Visible = false;
         }
 
         private void btnMyAccount_Click(object sender, EventArgs e)
         {
+            lblRoomNumber.Text = $"Room number: {student.GetRoomNumber()}";
             HideUserControls();
             ChangeAllColors();
             btnMyAccount.BackColor = Color.LightSteelBlue;
+
 
 
         }
@@ -161,14 +157,12 @@ namespace StudentHousingBV
             
         }
 
-        private void pnlAnnouncements_Load(object sender, EventArgs e)
+
+        private void btnChangeRoom_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void pnlAnnouncements_Load_1(object sender, EventArgs e)
-        {
-
+            pnlChangeRoom.Visible = true;
+            pnlChangeRoom.BringToFront();
+            ChangeAllColors();
         }
     }
 }
