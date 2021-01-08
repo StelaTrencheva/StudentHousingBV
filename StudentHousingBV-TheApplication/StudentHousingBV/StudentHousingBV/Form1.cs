@@ -39,25 +39,19 @@ namespace StudentHousingBV
 
         private void rBEmployee_CheckedChanged(object sender, EventArgs e)
         {
-            ListOfAllEmployees = new List<Employee>();
             cbbProfiles.Items.Clear();
-            for (int i = 0; i < 5; i++)
+            foreach (Employee employee in ListOfAllEmployees)
             {
-                Employee employee = CreateEmployeeByIndex(i);
                 cbbProfiles.Items.Add(employee.GetEmployeeInfo());
-                ListOfAllEmployees.Add(employee);
             }
         }
 
         private void rBStudents_CheckedChanged(object sender, EventArgs e)
         {
-            ListOfAllStudents = new List<Student>();
             cbbProfiles.Items.Clear();
-            for (int i = 0; i < 10; i++)
+            foreach (Student student in ListOfAllStudents)
             {
-                Student student = CreateStudentByIndex(i);
                 cbbProfiles.Items.Add(student.GetStudentInfo());
-                ListOfAllStudents.Add(student);
             }
         }
 
@@ -110,8 +104,27 @@ namespace StudentHousingBV
         {
             return ListOfAllStudents;
         }
-        
-     
-       
+
+        private void cbbProfiles_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void LogInPage_Load(object sender, EventArgs e)
+        {
+            ListOfAllEmployees = new List<Employee>();
+            for (int i = 0; i < 5; i++)
+            {
+                Employee employee = CreateEmployeeByIndex(i);
+                ListOfAllEmployees.Add(employee);
+            }
+            ListOfAllStudents = new List<Student>();
+            for (int i = 0; i < 10; i++)
+            {
+                Student student = CreateStudentByIndex(i);
+                cbbProfiles.Items.Add(student.GetStudentInfo());
+                ListOfAllStudents.Add(student);
+            }
+        }
     }
 }
