@@ -12,7 +12,7 @@ namespace StudentHousingBV
 {
     public partial class ManageAccountsEmployee : UserControl
     {
-        public List<Student> ListOfStudents ;
+        public List<Student> ListOfStudents;
         public ManageAccountsEmployee()
         {
             InitializeComponent();
@@ -24,19 +24,30 @@ namespace StudentHousingBV
         }
         private void btnAccountInfo_Click(object sender, EventArgs e)
         {
-            int index = lsbAllStudents.SelectedIndex;
-            foreach(Student student in ListOfStudents)
+            int index = -1;
+            index = lsbAllStudents.SelectedIndex;
+            if (index != -1)
             {
-                if(student == ListOfStudents[index])
+                txtbAccountInfo.Text = "";
+                foreach (Student student in ListOfStudents)
                 {
-                    txtbAccountInfo.Text = student.GetStudentInfo();
+                    if (student == ListOfStudents[index])
+                    {
+                        txtbAccountInfo.Text = student.GetStudentInfo();
+                    }
                 }
             }
+            else
+            {
+                MessageBox.Show("Select a student");
+            }
+
 
         }
 
         private void btnShowAllStudents_Click(object sender, EventArgs e)
         {
+            lsbAllStudents.Items.Clear();
             foreach (Student student in ListOfStudents)
             {
                 lsbAllStudents.Items.Add(student.GetName());
