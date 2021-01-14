@@ -59,31 +59,34 @@
             this.lBHouseRules.BackColor = System.Drawing.Color.Lavender;
             this.lBHouseRules.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
             this.lBHouseRules.FormattingEnabled = true;
+            this.lBHouseRules.HorizontalScrollbar = true;
             this.lBHouseRules.ItemHeight = 29;
             this.lBHouseRules.Items.AddRange(new object[] {
-            "--> For your own safety and to keep escape routes clear, it is",
-            " not allowed to place (private) objects or possessions of ",
-            "yourself or of visitors in the common areas, staircases and ",
-            "corridors.",
-            "--> A non-smoking area applies in all common areas and ",
-            "smoking is only permitted onthe site in the designated area.",
-            "--> It is not permitted to carry out repairs or other work on ",
-            "the pipes or ornaments of the stairs and/or gallery lighting. ",
-            "Instead, inform our caretakers.",
+            "--> For your own safety and to keep escape routes clear, it is not allowed to pla" +
+                "ce (private) objects or possessions of yourself or of visitors in the common are" +
+                "as, staircases and corridors.",
+            "",
+            "--> A non-smoking area applies in all common areas and smoking is only permitted " +
+                "onthe site in the designated area.",
+            "",
+            "--> It is not permitted to carry out repairs or other work on the pipes or orname" +
+                "nts of the stairs and/or gallery lighting. Instead, inform our caretakers.",
+            "",
             "--> It is forbidden to cycle in the parking garage.",
-            "--> The maximum load of the elevators may not ",
-            "be exceeded. Elevators cannot and may not be used in case ",
-            "of fire. ",
-            "--> It is not allowed to sublet your rental property to a ",
-            "third party. When subletting your rental property, you will ",
-            "risk a fine or a cancellation of your rental contract.",
-            "--> Keeping pets is not allowed. Visitors\' pets are also ",
-            "not allowed.",
-            "--> Due to the water, electricity, gas and central heating ",
-            "pipes in the screed and walls, ",
-            "it is not allowed to hammer or drill into the floor and walls. ",
-            "--> The employee reports his visit at least 1 day in advance",
-            "by email."});
+            "",
+            "--> The maximum load of the elevators may not be exceeded. Elevators cannot and m" +
+                "ay not be used in case of fire. ",
+            "",
+            "--> It is not allowed to sublet your rental property to a third party. When suble" +
+                "tting your rental property, you will risk a fine or a cancellation of your renta" +
+                "l contract.",
+            "",
+            "--> Keeping pets is not allowed. Visitors\' pets are also not allowed.",
+            "",
+            "--> Due to the water, electricity, gas and central heating pipes in the screed an" +
+                "d walls, it is not allowed to hammer or drill into the floor and walls. ",
+            "",
+            "--> The employee reports his visit at least 1 day in advance by email."});
             this.lBHouseRules.Location = new System.Drawing.Point(43, 108);
             this.lBHouseRules.Name = "lBHouseRules";
             this.lBHouseRules.Size = new System.Drawing.Size(690, 439);

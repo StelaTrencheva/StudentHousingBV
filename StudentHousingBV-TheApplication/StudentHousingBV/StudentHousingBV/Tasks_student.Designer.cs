@@ -209,7 +209,7 @@
             // 
             // timerTasks
             // 
-            this.timerTasks.Interval = 300000;
+            this.timerTasks.Interval = 5000;
             this.timerTasks.Tick += new System.EventHandler(this.timerTasks_Tick);
             // 
             // pnlDeposit

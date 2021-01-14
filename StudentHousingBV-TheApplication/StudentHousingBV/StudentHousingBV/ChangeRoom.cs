@@ -61,8 +61,8 @@ namespace StudentHousingBV
             lblRoomNumber.Text = "Room number: ";
             lblNewRoomNumber.Text = roomNumber.ToString();
             lblTypeOfAccomodation.Text= $" {accomodation}";
-            lblRent.Text= $" {rent}";
-        }
+            lblRent.Text= $" {rent}";      
+         }
 
         private void cbTypeOfAccomodation_SelectedValueChanged(object sender, EventArgs e)
         {

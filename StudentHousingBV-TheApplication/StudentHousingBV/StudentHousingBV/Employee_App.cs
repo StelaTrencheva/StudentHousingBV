@@ -70,6 +70,7 @@ namespace StudentHousingBV
             btnComplaintsEmp.BackColor = Color.AliceBlue;
             btnMyAccountEmp.BackColor = Color.AliceBlue;
             btnManageAccountsEmp.BackColor = Color.AliceBlue;
+            btnCommonQuestionsEmp.BackColor = Color.AliceBlue;
         }
         // every time a new panel is added, add it here and make its visability false
         private void HideUserControls()
